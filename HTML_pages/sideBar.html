@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        .sideBarMainDiv{
+            position: fixed;
+            z-index: 10000000000;
+            height: 460px;
+            width: 350px;
+           background-color: #f7f6f7;
+            right: 8%;
+            top: 10%;
+            border: 1px solid lightslategray;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            gap: 1%;
+            font-size: 13px !important;
+        }
+        .bankpayDiv{
+        display: flex;
+        align-items: center;
+       gap: 4%;
+       background-color: white;
+       cursor: pointer;
+       font-size: 13px !important;
+        }
+        .fundWatchList{
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            font-size: 13px !important;
+        }
+        .insideDiv{
+            display: flex;
+            align-items: center;
+       gap: 4%;
+       background-color: white;
+       font-size: 13px !important;
+        }
+        .LoggedUser{
+            display: flex;
+            align-items: center;
+            gap: 10%;
+            margin-left: 5%;
+            font-size: 13px !important;
+        }
+        .UserFirstLetter{
+            background-color: rgb(73, 43, 207);
+            padding: 80%;
+            padding-left: 100%;
+            padding-right: 100%;
+            border-radius: 50%;
+            color: whitesmoke;
+            font-size: 20px;
+            font-size: 13px !important;
+        }
+        .userNameEmail p{
+            line-height: 6px;
+            font-size: 13px !important;
+        }
+        .imgMargin{
+            margin-left: 4%;
+            font-size: 13px !important;
+
+        }
+        .onhover:hover{
+            background-color: #f7f6f7;
+            cursor: pointer;
+            font-size: 13px !important;
+        }
+    </style>
+</head>
+<body>
+    <button></button>
+
+    <div class="sideBar">
+
+        <div class="sideBarMainDiv">
+
+            <div class="LoggedUser">
+
+                <div class="UserFirstLetterDiv onhover"><span class="UserFirstLetter">G</span></div>
+                <div class="userNameEmail onhover"><p>Govind</p><p>Govindsingh0498@gmail.com</p></div>
+            </div>
+            <div class="bankpayDiv onhover">
+               <img class="imgMargin" width="20px" height="20px" src="https://img.icons8.com/external-becris-lineal-becris/2x/external-bank-finance-investment-becris-lineal-becris.png" alt="">
+                <p>Bank & AutoPay</p>
+            </div>
+            <div class="fundWatchList">
+                <div class="insideDiv onhover">
+                  <img class="imgMargin" width="20px" src="https://img.icons8.com/ios/2x/initiate-money-transfer.png" alt="">
+               <p>Import Funds</p>
+                </div>
+                <div class="insideDiv onhover">
+                    <img class="imgMargin" width="20px" src="https://th.bing.com/th/id/OIP.ZjA7l-AiWiI328I6JZL8_AHaHa?w=188&h=188&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="">
+                    <p>Watchlist</p>
+                </div>
+            </div>
+            <div class="fundWatchList">
+                <div class="insideDiv onhover"><img class="imgMargin" width="20px" src="https://image.shutterstock.com/image-vector/application-form-vector-icon-260nw-787773907.jpg" alt=""><p>Orders</p></div>
+                <div class="insideDiv onhover"><img class="imgMargin" width="20px" src="https://th.bing.com/th/id/R.71f0484dc7ec33b1aab7c77f226adf74?rik=lSjn0bXT1DBSeg&riu=http%3a%2f%2f2.bp.blogspot.com%2f_KyMCCsOr4Bk%2fTMXtZzm4yyI%2fAAAAAAAAALM%2fMLyLQhkg1Dk%2fs1600%2fsip-logo-300px.gif&ehk=YYzwwv%2froXuOHc8Gu0%2fSnELQJbeyYCkWz8y2Uaz17ds%3d&risl=&pid=ImgRaw&r=0" alt=""><p>SIPs</p></div>
+            </div>
+            <div class="fundWatchList">
+                <div class="insideDiv onhover"><img class="imgMargin" width="20px" src="https://img.icons8.com/glyph-neue/2x/phone-disconnected.png" alt=""><p>Help & Support</p></div>
+                <div class="insideDiv onhover"><img class="imgMargin" width="20px" src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/2x/external-setting-basic-ui-elements-flatart-icons-outline-flatarticons.png" alt=""><p>Setting</p></div>
+            </div>
+                <div class="insideDiv onhover"><img class="imgMargin" width="20px" src="https://img.icons8.com/ios-filled/2x/do-not-disturb-2.png" alt=""><p class="mode">Dark Mode</p></div>
+                <div class="insideDiv onhover"><img class="imgMargin" width="20px" src="https://image.shutterstock.com/image-vector/login-icon-trendy-flat-style-260nw-414685642.jpg" alt=""><p>Log Out</p></div>
+        </div>
+
+    </div>
+</body>
+</html>
+<script>
+
+let mode=document.querySelector(".mode")
+let body=document.querySelector("HTML")
+let j=document.querySelector(".sideBar")
+console.log(body);
+mode.onclick=()=>{
+body.style.backgroundColor="black"
+body.style.color="white"
+j.style.backgroundColor="black"
+console.log("k");
+}
+
+</script>

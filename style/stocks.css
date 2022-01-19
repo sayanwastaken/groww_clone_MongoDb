@@ -1,0 +1,143 @@
+#nav-bar{
+    border: 1px solid black;
+    width: 1100px;
+    display: flex;
+    /* justify-content: space-between; */
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    margin-top: 50px;
+    margin: auto;
+}
+#groww-logo{
+    margin-top: 5px;
+    margin-right: 25px;
+}
+#groww-logo > img{
+    width: 150px;
+    height: 40px;
+}
+
+#after_logo{
+    display: flex;
+}
+
+#after_logo > p{
+    margin-right: 30px;
+}
+
+#search > img{
+    width: 20px;
+    height: 20px;
+    /* border: 1px solid red; */
+    /* margin-top: 10px; */
+    /* padding: 5px 0; */
+    margin-right: 10px;
+}
+
+#search > input{
+    width: 350px;
+    border: none;
+   
+    height: 20px;
+    outline: none;
+}
+
+#search{
+    width: 400px;
+    /* border: 1px solid red; */
+    height: 30px;
+    padding: 5px 15px;
+    border-radius: 10px;
+    box-shadow: 0 0px 5px 1px rgba(0, 0, 0, 0.09), 0 0 5px 0px rgba(0, 0, 0, 0.10);
+    margin-top: 5px;
+}
+#three-div{
+    margin-left: 30px;
+}
+#three-div > img{
+    width: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+#three-div > img:nth-child(3){
+    width: 27px;
+    /* margin-top: 20px; */
+}
+#Select_funds{
+    display: flex;
+    /* margin-right:100px; */
+    border: 1px solid red;
+    height: 50px;
+}
+#Select_funds div > button{
+    font-family: 'Roboto', sans-serif;
+    margin-right:50px ; 
+    font-size: 16px;
+    background-color: white;
+    border: none;
+    /* color: #00d09c; */
+}
+
+.sub-bord{
+    display: flex;
+    justify-content: space-between;
+}
+.sub-bord > h3{
+   font-size: 21px;
+   font-weight: 500;
+}
+.sub-bord > a > p{
+    margin-top: 25px;
+    margin-right: 25px;
+    font-size: 14px;
+    color: #00d09c;
+    font-weight: bolder;
+    text-decoration: none;
+    
+}
+.sub-bord > a{
+    text-decoration: none;
+}
+.margin-mid{
+    width: 1100px;
+    margin: auto;
+    border: 1px solid blue;
+    display: grid;
+    grid-template-columns: 65% 30%;
+    font-family: 'Roboto', sans-serif;
+}
+#four_box{
+    display: grid;
+    grid-template-columns: 150px 150px 150px 150px;
+    column-gap: 25px;
+}
+.bord{
+    border: 1px solid red;
+    
+}
+.box{
+    /* border: 1px solid black; */
+    width: 130px;
+    height: 140px;
+    padding: 15px;
+    border-radius: 10px;
+    /* margin-left: 20px; */
+}
+.box_img{
+    border: 1px solid rgb(182, 181, 181);
+    width: 30px;
+    border-radius: 10px;
+    padding: 3px;
+}
+.box_img > img{
+    width: 30px;
+    height: 26px;
+   
+}
+.shadow{
+    box-shadow: 0 0px 5px 1px rgba(0, 0, 0, 0.09), 0 0 5px 0px rgba(0, 0, 0, 0.10);
+}
+/* #four_box > div:nth-child(2) > p:nth-child(1){
+    width: 60px;
+} */

@@ -1,0 +1,123 @@
+*{
+    font-family: Roboto,system-ui;
+}
+.popConatinerOnPaymentPage{
+max-width: 100%;
+background-color: blue;
+
+}
+.popConatinerOnPaymentPageMain{
+    position: absolute;
+    height: 400px;
+    width: 320px;
+    z-index: 1;
+    left: 40%;
+    top: 19%;
+   background-color: white;
+   visibility: hidden;
+    
+}
+
+.popConatinerOnPaymentPageMainHead{
+    display: flex;
+    gap: 4%;
+  padding-left: 2%;
+  padding-top: 2%;
+  border-bottom: 1px solid lightslategray;
+}
+.popConatinerOnPaymentPageMainHead1{
+    cursor: pointer;
+  
+
+    
+}
+.popConatinerOnPaymentPageMainHead2{
+    cursor: pointer;
+}
+.AmountDiv{
+    display: flex;
+    align-items: center;
+    gap: 15%;
+}
+#EnterAmount{
+    width: 100px;
+    background-color:rgb(198, 238, 225);
+    border: none;
+ padding: 2%;
+}
+.EnterAmountText{
+    font-size: 14px;
+    color: #44475b;
+    margin-left: 3%;
+}
+.ManualAmountDiv{
+     display:flex;
+     justify-content: flex-end;
+     gap: 3%;
+     padding: 4%;
+     border-bottom: 1px solid lightslategray;
+}
+.ManualAmountDiv button{
+    border: 1px solid mediumaquamarine;
+    background-color:rgb(198, 238, 225);
+    border-radius: 20px;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+.payUsingAndMoreOptDiv{
+    display: flex;
+    align-items: center;
+    gap: 34%;
+    padding: 2%;
+}
+.moreOptionsh4{
+    color: #00d09c;
+    font-size: 15px;
+    font-weight: 400;
+}
+.depositBt{
+    color: whitesmoke;
+    background-color: #00d09c;
+    width: 90%;
+    font-size: 16px;
+    padding: 4%;
+  margin-left: 5%;
+  border: none;
+  border-radius: 6px;
+}
+.upiDIv{
+    display: flex;
+    padding: 8%;
+}
+#upInput{
+    border: none;
+    border-bottom: 1px solid lightslategray;
+    background-color: inherit;
+    margin-left: 10%;
+}
+.ChangeContent1{
+   display: block;
+}
+.ChangeContent2{display: none;}
+.showWithDrawableAmount{
+    display: flex;
+    align-items: center;
+    gap: 35%;
+    padding: 3%;
+}
+.checkForWithdrawAll{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 4%;
+}
+.withdrawcheckBoxtext{
+  color: #00d09c;
+    font-size: 14px;
+    opacity: .6;
+}
+.withdrawBtn{
+   background-color: #70727c;
+   opacity: .4;
+   margin-top: 5%;
+}

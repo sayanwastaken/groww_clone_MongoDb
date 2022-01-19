@@ -1,0 +1,395 @@
+body{
+  padding: 0%;
+  margin: 0%;
+  /* max-width: 100%; */
+  overflow-x: hidden;
+}
+
+#thirddiv {
+  padding: 10px;
+  background-color: white;
+}
+.heading {
+  color: #44475b;
+  font-family: Roboto, system-ui;
+  font-size: 36px;
+  line-height: 25px;
+  letter-spacing: 0.2px;
+  font-weight: 500;
+  text-align: center;
+  padding: 10px;
+  margin-top: 25px;
+}
+.cimages {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 45px;
+}
+.cimages > div {
+  border: 1px solid transparent;
+  width: 20%;
+  height: 20x0px;
+  border-radius: 20px;
+}
+.imgc {
+  width: 100%;
+  height: 100%;
+}
+.imgctext {
+  display: flex;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 45px;
+}
+.imgctext > div {
+  border: 1px solid transparent;
+
+  width: 18%;
+
+  /* border-radius: 20px; */
+  color: #44475b;
+  font-family: Roboto, system-ui;
+  font-size: 20px;
+
+  letter-spacing: 0.2px;
+  font-weight: 500;
+
+  text-align: center;
+  padding: 10px;
+}
+.article {
+  color: #00d09c;
+  font-weight: bold;
+  text-decoration: none;
+}
+.article:hover {
+  text-decoration: underline;
+}
+#viewarticle {
+  text-align: center;
+  font-family: Roboto, system-ui;
+}
+#livemint {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 35px;
+}
+#livemint > div {
+  border: 1px solid transparent;
+  width: 15%;
+  height: 90px;
+  margin-top: 35px;
+  filter: grayscale(2);
+}
+#livemint > div > img {
+  width: 150px;
+
+  margin: auto;
+  justify-content: center;
+}
+#livemint > div:hover {
+  border: 1px solid transparent;
+  width: 15%;
+  height: 90px;
+  margin-top: 35px;
+  filter: grayscale(0);
+  cursor: pointer;
+}
+/* --------------------thriddiv end----------- */
+
+#forthdiv {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 550px;
+  /* padding: 20px; */
+
+  background-color: whitesmoke;
+}
+#forthdiv > div {
+  border: 1px solid transparent;
+  width: 70%;
+  margin: auto;
+}
+
+.forthdivheading {
+  border: 1px solid transparent;
+  color: #44475b;
+  font-family: Roboto, system-ui;
+  font-size: 30px;
+  line-height: 25px;
+  letter-spacing: 0.2px;
+  font-weight: 500;
+  text-align: left;
+
+  margin-top: 15px;
+  width: 50%;
+}
+
+.fortdivtext {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.fortdivtext > div {
+  border: 1px solid transparent;
+  width: 45%;
+  height: 25px;
+
+  font-family: Roboto, system-ui;
+  font-size: 13px;
+  color: #44475b;
+  line-height: 20px;
+  margin-top: 10px;
+
+  font-weight: 500;
+  border-radius: 10px;
+}
+#forthdiv_inv > div:hover {
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#forthdiv_inv {
+  display: flex;
+  justify-content: space-between;
+}
+#forthdiv_inv > div {
+  border: 1px solid transparent;
+  width: 30%;
+  height: auto;
+  padding: 8px;
+  margin-top: 35px;
+  background-color: white;
+}
+.invimg {
+  width: 100%;
+  height: 60px;
+  border: 1px solid transparent;
+  padding: 2px;
+}
+.invimg > img {
+  width: 90%;
+  height: 100%;
+}
+.invtext {
+  font-family: Roboto, system-ui;
+  font-size: 13px;
+  color: #44475b;
+  line-height: 30px;
+  margin-top: 10px;
+  padding: 10px;
+
+  font-weight: 400;
+  text-align: justify;
+}
+.inv_name {
+  font-family: Roboto, system-ui;
+  font-size: 14px;
+  color: #44475b;
+  line-height: 10px;
+  margin-top: 10px;
+  font-weight: 500;
+  padding: 10px;
+}
+.ptext {
+  font-family: Roboto, system-ui;
+  font-size: 12px;
+  color: #44475b;
+  line-height: 20px;
+  margin-top: 10px;
+  font-weight: 400;
+}
+
+/* --------------fifth div start----- */
+#fifthdiv {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+#text {
+  margin-top: 65px;
+}
+#cardstext {
+  margin: auto;
+  margin-top: 55px;
+  width: 70%;
+  height: 600px;
+  border: 1px solid transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 35px;
+}
+#cardstext > #text {
+  width: 48%;
+  padding: 10px;
+  border: 1px solid transparent;
+}
+.listinvest {
+  margin-top: 20px;
+  width: 90%;
+  height: 70px;
+  border: 1px solid transparent;
+  padding: 10px;
+  display: flex;
+}
+.bulletstyle {
+  /* vertical-align: middle; */
+  width: 15%;
+  height: 100%;
+  border: 1px solid transparent;
+  display: flex;
+  flex-direction: row;
+}
+.bulletstyle > img {
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+/* -------------------card css------- */
+
+#card {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  height: 700px;
+  border: 1px solid transparent;
+  margin: auto;
+}
+.card1 {
+  background-color: transparent;
+  width: 200px;
+  height: 300px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  cursor: pointer;
+
+  border: 1px solid transparent;
+  margin-top: 30px;
+  margin: auto;
+}
+.card2 {
+  background-color: transparent;
+  width: 200px;
+  height: 300px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+  cursor: pointer;
+
+  border: 1px solid transparent;
+  /* margin-top: 30px; */
+  margin: auto;
+ 
+}
+#cardcontiner {
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  margin: auto;
+}
+
+/* ----------------card css end------------------ */
+
+/* getin--------------------------------------------------- */
+#sixthdiv {
+  margin-top: 190px;
+  width: 100%;
+  height: 270px;
+  border: 1px solid transparent;
+ 
+}
+
+#getinToch {
+  border: 1px solid transparent;
+  width: 70%;
+  height: 250px;
+  margin: auto;
+  border-radius: 15px;
+  background-color: #00d09c;
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 10px;
+  margin-bottom: 105px;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+ 
+}
+
+.getinToch_1{
+    border: 1px solid transparent;
+    width: 60%;
+    height: 90%;
+    padding: 10px;
+   
+}
+#toch1{
+    margin-left: 25px;
+    margin-top: 45px;
+    font-family: Roboto, system-ui;
+    font-size: 25px;
+    line-height: 25px;
+    letter-spacing: 0.2px;
+    font-weight: 500;
+    color: white;
+}
+.toch1{
+    margin-left: 20px;
+    margin-top: 15px;
+    font-family: Roboto, system-ui;
+    font-size: 14px;
+    line-height: 25px;
+    text-align: justify;
+    color: white;
+
+}
+.gtbtn{
+    background-color: white;
+    color: #00d09c;
+    width: 150px;
+    height: 40px;  
+    margin-left: 20px;
+    margin-top: 15px; 
+    border: none;
+    border-radius: 5px;
+
+}
+.gtbtn:hover{
+    font-weight: bolder;
+    background-color: rgb(230, 230, 230);
+    cursor: pointer;
+}
+#appImg{
+    width: 80%;
+    height: 260px;
+    border: 1px solid transparent;
+    margin: auto;
+   
+}
+.pimg{
+    border: 1px solid transparent;
+    width:30% ;
+    height: 260px;
+   
+}
+
+
+/* buble----------------------------------- */
+#bubble{
+  /* padding: 10px; */
+  margin-left: 0%;
+  width:100%;
+  height: 300px;
+  margin-bottom: 250px;
+}
+

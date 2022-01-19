@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/favicon-32x32-groww.ico"
+      sizes="32x32"
+    />
+    <title>
+      Groww - Online Demat, Trading and Direct Mutual Fund Investment in India
+    </title>
+    <link rel="stylesheet" href="homeTop.css" />
+    <link
+      href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- modal start -->
+    <div class="modal" id="modal">
+      <div class="left_modal">
+        <div  class="leftTitle">
+          <h1 id="">Simple, Free <br> Investing. </h1>
+        </div>
+        <div class="leftAnimation"></div>
+      </div>
+      <div class="right_modal">
+        <div class="close-btnDiv">
+          <button class="close-btn" data-close-button>&times;</button>
+        </div>
+        <div class="rightTitle">
+          <h1>Welcome To Groww</h1>
+        </div>
+        <div class="Gdiv">
+          <span><img src="./assets/googleSvg.svg" alt=""/>Continue With Google</span>
+        </div>
+        <div class="loginDiv">
+          <div class="ORdiv">Or</div>
+          <div class="inputDiv" id="inputDiv">
+            <input type="text"  id="login-mail" class="login-mail" placeholder="Enter Your Email Address And Press Enter">
+            <h5 id="email-validationText">Please Enter Email Address</h5>
+            <!-- <input type="email"  id="login-otp" class="login-otp" placeholder="Enter OTP">
+            <h5 id="otp-validationText">Wrong OTP Number please close this box and try again</h5> -->
+            <div class="login-btnDiv">
+              <!-- <button id="login-btn" class="login-btn">Send OTP</button> -->
+            </div>
+            <div class="login-tc">
+              <p>By proceeding, I agree to <b><u>T&C</u></b> and <b><u>Privacy policy</u></b></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="overlay"></div>
+    <!-- modal -->
+    <div class="container-Top">
+      <div class="main">
+        <div class="head">
+          <div class="logoDiv">
+            <img src="./assets/growwHead.svg" alt="" />
+          </div>
+          <div class="headRight">
+            <div class="searchDiv">
+              <span class="material-icons md-24 searchLogo"> search </span>
+              <input
+                type="text"
+                name=""
+                id="searchBar"
+                placeholder="What are you looking for today?"
+              />
+            </div>
+            <div class="btnDiv">
+              <button id="btn_login" data-modal-target="#modal">
+                Login/Register
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="stockBody">
+          <div class="leftStock">
+            <div class="upper">
+              <h1 class="changing_text">
+                <span class="h1span"> Invest in </span>
+              </h1>
+              <div class="text_cont">
+                <span>
+                  FDs <br />
+                  IPO <br />
+                  US Stocks <br />
+                  Future & Options <br />
+                  Mutual Funds <br />
+                  Stocks
+                </span>
+              </div>
+            </div>
+            <div class="lower">
+              <h4 class="lowerText">
+                Trusted by <b>Millions</b> of Indians. Start investing <br />
+                today.
+              </h4>
+              <button id="getStarted-btn" data-modal-target="#modal">
+                Get Started
+              </button>
+            </div>
+          </div>
+          <div class="rightStock">
+            <div class="mfDiv">
+              <img src="./assets/mfLogo.svg" alt="" height="40" width="40" />
+              <h3>Mutual Funds</h3>
+            </div>
+            <div class="stkDiv">
+              <img
+                src="./assets/stocksLogo.svg"
+                alt=""
+                height="40"
+                width="40"
+              />
+              <h3>Stocks</h3>
+            </div>
+            <div class="ftDiv">
+              <img
+                src="./assets/optionLogo.svg"
+                alt=""
+                height="40"
+                width="40"
+              />
+              <h3>Future & Options</h3>
+            </div>
+            <div class="usDiv">
+              <img src="./assets/usLogo.svg" alt="" height="40" width="40" />
+              <h3>US Stocks</h3>
+            </div>
+            <div class="ipoDiv">
+              <img src="./assets/ipoLogo.svg" alt="" height="40" width="40" />
+              <h3>IPO</h3>
+            </div>
+            <div class="fdDiv">
+              <img src="./assets/bankLogo.svg" alt="" height="40" width=40">
+              <h3>Fixed Deposits</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script src="homeTop.js"></script>

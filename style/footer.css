@@ -1,0 +1,144 @@
+body {
+  /* max-width: 100%; */
+  /* padding: 0%;
+  margin: 0%; */
+  font-family: Roboto, system-ui;
+ 
+  letter-spacing: 0.2px;
+  font-weight: 500;
+}
+.footerDiv {
+  width: 100%;
+  /* height: auto; */
+  /* position: relative; */
+  right: 22rem;
+  top: 25rem;
+  /* border: 1px solid #1e2232; */
+  background-color: #1e2232;
+  /* margin-top: -140px; */
+  border: 1px solid transparent;
+  /* margin-right: 35; */
+  margin-top: 75px;
+}
+.footer {
+  width: 80%;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  /* border: 1px solid black; */
+  display: flex;
+}
+.footer > div {
+  width: 22%;
+  margin: 1%;
+  /* border: 1px solid yellow; */
+}
+#footer11 img {
+  width: 120px;
+}
+#footer12 {
+  color: white;
+  margin-top: 18px;
+  font-size: 16px;
+  line-height: 25px;
+  font-size: 12px;
+ 
+}
+#footer13 a {
+  color: white;
+  margin-top: 3px;
+  font-size: 16px;
+  line-height: 25px;
+}
+#footer14icons {
+  display: flex;
+  margin-top: 15px;
+}
+#footer14icons > div {
+  width: 20px;
+  height: 25px;
+  /* border: 1px solid red; */
+  margin: 19px;
+  margin-left: 1px;
+}
+#footer14icons > div a img {
+  width: 23px;
+  align-items: center;
+}
+#footer2 {
+  margin-left: 50px;
+}
+#footer21 {
+  color: white;
+  font-size: 18px;
+}
+#footer22 > a {
+  margin-top: 11px;
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 12px;
+}
+#footer31 {
+  color: white;
+  font-size: 18px;
+}
+#footer32 > a {
+  margin-top: 11px;
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 12px;
+}
+#footer41 {
+  color: white;
+  font-size: 18px;
+}
+#footer42 > a {
+  margin-top: 11px;
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 12px;
+}
+#footer5 {
+  width: 80%;
+  margin: auto;
+}
+#footer6 {
+  width: 80%;
+  display: flex;
+  margin: auto;
+
+  height: 25px;
+  margin-bottom: 80px;
+}
+#footer6 > div {
+  width: 45%;
+  margin: 2%;
+  /* border:1px solid red;  */
+  /* height: 50px; */
+}
+#footer61 {
+  color: white;
+  font-size: 16px;
+}
+#footer62 {
+  display: flex;
+  flex-direction: row-reverse;
+}
+#footer62 > div {
+  /* border: 1px solid white; */
+  margin: 5px 8px;
+  width: 200px;
+  border-radius: 8px;
+  margin-left: 5px;
+}
+#footer62 > div > img {
+  width: 200px;
+  height: 60px;
+  cursor: pointer;
+}

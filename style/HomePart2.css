@@ -1,0 +1,77 @@
+*{
+    font-family: Roboto, system-ui;
+    color: #44475b;
+    
+  
+    /* line-height: 25px; */
+    letter-spacing: 0.2px;
+}
+.yourMoneyYourChoice{
+    color: #44475b;
+    font-weight: 600;
+    font-size: 36px;
+    padding-left: 6%;
+    padding-right: 6%;
+}
+.stockView{
+    padding-left: 6%;
+    padding-right: 6%;
+    display: flex;
+    column-gap: 3%;
+}
+.stockView>p{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.stockView img{
+    width: 25%;
+    height: 84%;
+}
+.stockView>p span{
+  font-size: 22px;
+  color: #44475b;
+  font-weight: 600;
+}
+.clicKtoChangeTypeOfshareDiv img{
+    width: 90%;
+    padding: 6%;
+}
+.clickAndSeeRateAndStock{
+    display: flex;
+    width: 95%;
+    padding-left: 5%;
+}
+.clickAndSeeRateAndStock div{
+    width: 100%;
+}
+.clicKtoChangeTypeOfshareInterest{
+    width: 74%;
+    height: 68%;
+    /* //border: 1px solid black; */
+}
+.clicKtoChangeTypeOfshareInterestdiv{
+    padding: 6%;
+    display: flex;
+    flex-direction: column;
+}
+.CreateAccountForFree{
+    padding:2%;
+    background-color: #00d09c;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 4%;
+    width: 50%;
+    margin-left: 5%;
+}
+.CreateAccountForFree:hover{
+    opacity: 0.8;
+}
+.clickTOchange{
+    /* border-bottom: 2px solid #00d09c; */
+   caret-color: white;
+ 
+}

@@ -1,0 +1,1061 @@
+/* *{
+    border: 1px solid blue;
+} */
+html,body{
+    max-width: 100%;
+    margin: 0%;
+    padding: 0%;
+    overflow-x: hidden;
+    letter-spacing: 0.2px;
+    font-family: Roboto, system-ui;
+}
+#nav-bar{
+    /* border: 1px solid black; */
+    width: 1140px;
+    display: flex;
+    /* justify-content: space-between; */
+    /* font-family: 'Roboto', sans-serif; */
+    font-weight: 400;
+    margin: auto;
+    margin-top: 20px;
+}
+#groww-logo{
+    margin-top: 5px;
+    margin-right: 25px;
+    cursor: pointer;
+}
+#groww-logo > img{
+    width: 150px;
+    height: 40px;
+}
+
+#after_logo{
+    display: flex;
+}
+
+#after_logo > p{
+    margin-right: 30px;
+}
+
+#search > img{
+    width: 20px;
+    height: 20px;
+    /* border: 1px solid red; */
+    /* margin-top: 10px; */
+    /* padding: 5px 0; */
+    margin-right: 10px;
+}
+
+#search > input{
+    width: 350px;
+    border: none;
+   
+    height: 20px;
+    outline: none;
+}
+
+#search{
+    width: 400px;
+    /* border: 1px solid red; */
+    height: 30px;
+    padding: 5px 15px;
+    border-radius: 10px;
+    box-shadow: 0 0px 5px 1px rgba(0, 0, 0, 0.09), 0 0 5px 0px rgba(0, 0, 0, 0.10);
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+}
+#three-div{
+    margin-left: 30px;
+}
+#three-div > img{
+    width: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+#three-div > img:nth-child(3){
+    width: 27px;
+    /* margin-top: 20px; */
+}
+#Select_funds{
+    display: flex;
+    margin-top: 1.5%;
+    margin-left: 5.2%;
+    height: 50px;
+}
+#Select_funds div > p{
+    font-family: 'Roboto', sans-serif;
+    margin-right:50px ; 
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #ffffff;
+    line-height: 37px;
+    cursor: pointer;
+    /* color: #00d09c; */
+}
+
+.sub-bord{
+    display: flex;
+     gap: 44%;
+    align-items: center;
+}
+.sub-bord > h3{
+   font-size: 21px;
+   font-weight: 500;
+}
+.sub-bord > a > p{
+    margin-top: 25px;
+    margin-right: 25px;
+    font-size: 14px;
+    color: #00d09c;
+    font-weight: bolder;
+    text-decoration: none;
+    
+}
+.sub-bord > a{
+    text-decoration: none;
+}
+#four_box{
+    display: grid;
+    grid-template-columns: 150px 150px 150px 150px;
+    column-gap: 25px;
+}
+.bord{
+    /* border: 1px solid red; */
+    
+}
+.box{
+    /* border: 1px solid black; */
+    width: 130px;
+    height: 140px;
+    padding: 15px;
+    border-radius: 10px;
+    /* margin-left: 20px; */
+}
+.box_img{
+    /* border: 1px solid rgb(182, 181, 181); */
+    width: 30px;
+    border-radius: 10px;
+    padding: 3px;
+}
+.box_img > img{
+    width: 30px;
+    height: 26px;
+   
+}
+.shadow{
+    box-shadow: 0 0px 5px 1px rgba(0, 0, 0, 0.09), 0 0 5px 0px rgba(0, 0, 0, 0.10);
+}
+/* #four_box > div:nth-child(2) > p:nth-child(1){
+    width: 60px;
+} */
+
+.lineTop{
+    opacity: 0.2;
+    margin-top: 8px;
+}
+
+.StockContentDiv{
+    /* border: 1px solid black; */
+    position: absolute;
+    z-index: 1;
+    width: 88%;
+    top: 30%;
+    height: 1800px;
+    display: flex;
+    gap: 4%;
+    /* visibility: hidden; */
+}
+.StockContentLeftDiv{
+    flex:2;
+    /* border: 1px solid black; */
+}
+.StockContentRightDiv{
+    flex: 1;
+    /* border: 1px solid black; */
+}
+.marketOpeingTime{
+    font-size: 14px !important;
+    color: #7c7e8c;
+    font-weight: 500 !important;
+}
+.Index{
+    font-weight: 600;
+    font-size: 20px;
+    color: #44475b;
+}
+.indexScreenerDiv{
+    display: flex;
+    align-items: center;
+    gap: 72%;
+}
+#SCREENER{
+    color: #00d09c;
+    font-size: 12px !important;
+    font-weight: 600;
+    background-color: #e1fcf4c7 !important;
+    border: none;
+    padding: 1%;
+    border-radius: 35px;
+    width: 140px !important;
+}
+.NiftySensex{
+    display: flex;
+    gap: 2%;
+    /* border: 1PX solid black; */
+  line-height: 0px;
+  height: 80px !important;
+}
+.red{
+    color: red;
+}
+.nif{
+    font-size: 14px;
+}
+.Nsa{
+font-size: 13px;
+color: #44475b;
+}
+.NiftySensex img{
+    width: 80%;
+    margin-top: 10%;
+    margin-left: 10%;
+}
+.subNiftySensex1{
+    display: flex;
+    /* border: 1px solid black; */
+}
+.subNiftySensex{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid black; */
+}
+
+/* .StockContentRightDivTop{
+    box-shadow: 1px 1px 1px 1px #888888;
+    border: none;
+} */
+.StockContentRightDivTop1{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 5%;
+    /* border-bottom: 1px solid rgb(230, 232, 235); */
+    margin: auto;
+}
+.StockContentRightDivTop1>p{
+    width: 60%;
+    font-size: 16px !important;
+    color: #44475b;
+}
+.StockContentRightDivTop1>div{
+    background-color: #f5f5f5;
+    padding: 2%;
+    margin: auto;
+}
+.StockInNewsDiv{
+    display: flex;
+    column-gap: 50%;
+    margin-top: 5%;
+}
+#StocksinNews{
+    width: 210px;
+}
+.StockInNewsDivBottom{
+    display: flex;
+    gap: 2%;
+    margin-top: 2%;
+}
+.StockInNewsDivBottom p{
+   text-align: center;
+}
+.StockInNewsDivBottom img{
+ margin: 3%;
+}
+.StockInNewsDivBottom div{
+    width: 23%;
+    height: 180px;
+}
+.StockDatahead{
+    display: flex;
+    gap: 45%;
+    background-color: #f7f6f7;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.StockDatahead p{
+    background-color: inherit !important;
+    padding: 1.5%;
+    margin-left: 2%;
+    height: 20px;
+    padding-top: 0;
+    margin-top: .5%;
+    font-size: 14px !important;
+    color: #44475b;
+}
+.divInsideStockData{
+    border-bottom: 1px solid lightslategray;
+    display: grid;
+    grid-template-columns: 40% 30% 20% 10%;
+    align-items: center;
+}
+#marketPrice{
+    width: 110px !important;
+}
+.MarketAndWatchListDiv{
+    display: flex;
+}
+.stockName:hover{
+  text-decoration: underline;
+}
+.topGainerHd{
+    display: flex;
+    align-content: center;
+    gap: 3%;
+    margin-top: 3%;
+}
+.topGainerHd h5,h3{
+    color: #44475b;
+}
+.StockDataBottom{
+    background-color: #f7f6f7;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 4%;
+    height: 50px;
+    align-items: center;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.arrow{
+    color: #00d09c;
+    font-weight:bolder;
+}
+.StockDataBottomclick1{
+    border-bottom: 2px solid springgreen;
+
+}
+.watchListDataapnd{
+    display: grid;
+    grid-template-columns: repeat(1,100%);
+    width: 350px;
+}
+.Flactuate{
+    line-height: 0px !important;
+    font-size: 14px !important;
+    color: red;
+}
+.stockPricep{
+    font-size: 16px !important;
+    color: #44475b;
+}
+.stockNamep{
+    width: 100% !important;
+    font-size: 14px !important;
+}
+/* MutualFund */
+
+.MutualContent{
+    /* border: 1px solid black; */
+    position: absolute;
+    z-index: 1;
+    width: 90%;
+    height: 1140px;
+    left: 5%;
+    top: 30%;
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+    /* border: 1px solid red; */
+}
+.MutualContent1{
+    display: flex;
+}
+.MutualContentLeft{
+    flex: 2;
+    /* border: 1px solid black; */
+}
+.MutualContentRight{
+    flex: 1;
+    /* border: 1px solid black; */
+}
+.PopularFunds{
+    font-size: 21px !important;
+    color: #515466 !important;
+    font-weight: bold !important;
+}
+#handpickedCollection{
+    font-size: 21px !important;
+    font-weight: 500 !important;
+    color: #585a66;
+    margin-top: 7%;
+}
+.handpickedImgs{
+    display: flex;
+}
+.handpickedImgs>div>p{
+    width: 100%;
+    font-weight: 500 !important;
+}
+.handpickedImgs img{
+    margin-left: 10%;
+}
+.belowHandpick{
+    display: flex;
+    background-color: #f7f6f7;
+    padding: 2%;
+    margin-top: 4%;
+    width: 90%;
+}
+.belowHandpick p{
+    width: 100%;
+    font-weight: 500 !important;
+    font-size: 12px !important;
+    background-color: #f7f6f7 !important;
+    border-radius: 5px;
+}
+.MutualContentRightTop{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+}
+.MutualContentRight img{
+    margin-top: 5%;
+}
+.MutualContentRight h2{
+ font-size: 19px;
+ font-weight: 400;
+ color: #44475b;
+}
+.MutualContentRight p{
+    font-size: 14px !important ;
+    color: #7c7e8c !important;
+    line-height: 20px !important;
+    text-align: center;
+}
+.MutualContentRight button{
+    font-size: 14px;
+    color: whitesmoke;
+width: 94%;
+background-color: #00d09c;
+border: none;
+padding: 4%;
+border-radius: 5px;
+}
+.MutualContentRightDown{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+    height: 300px;
+}
+.videosfromGrowDiv{
+    display: flex;
+    gap: 2%;
+    width: 90%;
+}
+.videosfromGrowDiv img{
+    border-radius: 10px;
+}
+.MutualContent2hd{
+    font-size: 21px !important;
+}
+.videosfromGrowDiv p{
+    padding: 4%;
+    margin-top: 0;
+    width: 90%;
+    font-size: 14px !important;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    height: 50px;
+    line-height: 26px !important;
+}
+.MutualContent2{
+    background-color: #f0ebf0;
+    padding: 4%;
+    margin-top: 8%;
+    width: 92%;
+    border-radius: 5px;
+}
+
+
+/* Mutual Content End */
+
+
+.FDdiv{
+    position: absolute;
+    z-index: 1;
+    width:94%;
+    height: 1740px;
+    /* border: 1px solid black; */
+    left: 5%;
+    visibility: hidden;
+
+}
+.IndusBankhd{
+    display: flex;
+    align-items: center;
+    column-gap: 1%;
+}
+.IndusBankhd>h1{
+    font-size: 21px;
+    color: #44475b;
+}
+.boxes{
+    display: flex;
+    width: 100%;
+    column-gap: 1%;
+}
+.boxes div{
+    width: 150px;
+    height: 100px;
+    border-radius: 5px;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0%;
+    margin-top: 3%;
+}
+.IndusBank{
+    margin-top: 3%;
+}
+.boxes div h1{
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    margin-top: 0px;
+    text-align: center;
+    color: #44475b;
+}
+.boxes div p{
+    margin-top: 0;
+    width: 92%;
+    padding: 4%;
+    border-top: rgb(223, 224, 226) 1px solid;
+    margin-top: -8%;
+}   
+.AboutFdsDiv{
+    width: 60%;
+    margin-top: 5%;
+}
+.AboutFdsDiv h1{
+    font-size: 21px;
+    color: #44475b;
+}
+.AboutFdsDiv p{
+    font-size: 15px !important;
+}
+.BelowAboutFdsDiv{
+    width: 60%;
+    display: grid;
+    column-gap: 5%;
+    grid-template-columns: repeat(2,40%);
+}
+.BelowAboutFdsDiv p{
+    font-size: 14px !important;
+}
+.frontDiv{
+    height: 400px;
+    width: 400px;
+    position: fixed;
+    z-index: 3;
+    left: 65%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   text-align: center;
+   top: 25%;
+}
+.frontDiv h5{
+    color: #44475b;
+}
+
+.UsStocksContent{
+    position: absolute;
+    /* border:1px solid black; */
+    width: 90%;
+    left: 5%;
+    top: 34%;
+    height: 1500px;
+    display: flex;
+    visibility: hidden;
+}
+.UsStocksContentLeft{
+    flex: 2;
+}
+.UsStocksContentRight{
+    flex: 1;
+}
+.UsStocksContentLeft1{
+    padding: 2%;
+    /* border: 1px solid black; */
+    display: flex;
+}
+.fundYourUsd{
+    display: flex;
+    gap: 2%;
+}
+.fundYourUsd h4{
+    color: #44475b;
+}
+.UsStocksContentLeft1{
+    border-radius: 5px;
+}
+.UsStocksContentLeft1 p{
+    font-size: 16px !important;
+    color: #44475b !important;
+}
+.usMarketOpenTime{
+    display: flex;
+    gap: 2%;
+    margin-left: 2%;
+}
+.usMarketOpenTime h4{
+    color: #44475b;
+}
+.TopInMarket{
+    display: flex;
+    gap: 60%;
+    align-items: center;
+    margin-left: 2%;
+}
+.TopInMarket h3{
+    font-size: 20px;
+    color: #44475b;
+}
+.SCREENER{
+    border: none;
+    padding-left: 2%;
+    padding-right: 2%;
+    border-radius: 30px;
+    font-size: 12px;
+    height: 26px;
+    background-color: #e5f8f3;
+    color: #00d09c;
+}
+.usMarketBoxes{
+    display: grid;
+    grid-template-columns: repeat(4,22%);
+    gap: 2%;
+   justify-content: center;
+}
+.usMarketBoxes h4{
+    color: #44475b;
+}
+.zom:hover{
+    zoom: 102%;
+}
+.usMarketBoxes h2{
+    color: red;
+    font-size: 16px;
+}
+.EtfsUnderUS{
+    display: flex;
+    align-items: center;
+    width: 428%;
+    gap: 30%;
+}
+.EtfsUnderUS h3{
+    color: #44475b;
+}
+.eTFsbtn{
+    border: none;
+    padding-left: 2%;
+    padding-right: 2%;
+    border-radius: 30px;
+    font-size: 12px;
+    height: 26px;
+    background-color: #e5f8f3;
+    color: #00d09c;
+    margin-left: 50%;
+}
+.etfBoxes{
+    display: grid;
+    grid-template-columns: repeat(2,46%);
+    gap: 2%;
+    row-gap: 10%;
+    justify-content: center;
+
+}
+.etfBoxesdiv{
+    display: flex;
+    gap: 20%;
+}
+.etfBoxesdiv h4{
+    margin-left: 5%;
+}
+.etfBoxesdiv:hover{
+   zoom: 102%;
+}
+.etfBoxesdiv h5{
+    color: red;
+}
+.hiddenText{
+    display: none;
+    font-size: 14px !important;
+    color: #44475b;
+    margin-left: 5%;
+}
+.FAQshd{
+    margin-top: 8%;
+    margin-left: 3%;
+}
+.clickToShowFQS{
+    padding: 3%;
+    border-bottom: 1px solid rgb(191, 194, 197);
+    color: #44475b;
+    cursor: pointer;
+}
+.UsStocksContentRight1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 96%;
+    margin: auto;
+    height: 400px;
+}
+.UsStocksContentRight1 h2{
+    font-size: 16px;
+    color: #44475b;
+    margin-left: 25%;
+}
+.UsStocksContentRight1 img{
+    margin-left: 30%;
+}
+.UsStocksContentRight1 button{
+    border: none;
+    background-color: #00d09c;
+    color: whitesmoke;
+    padding: 4%;
+    width: 90%;
+    align-self: center;
+    border-radius: 6px;
+}
+.feedBackDiv{
+    display: flex;
+    gap: 20%;
+    padding: 1%;
+    width: 94%;
+    margin: auto;
+    margin-top: 5%;
+}
+.green{
+    color: #00d09c;
+}
+.wnameP{
+    font-size: 14px !important;
+}
+.sideBarClickableDiv{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.UserFirstLetterSideBar{
+    padding: 40%;
+    padding-left: 50%;
+    padding-right: 50%;
+    background-color: rgb(73, 43, 207);
+    border-radius: 50%;
+    color: white;
+}
+
+/* sideBar Start */
+
+.sideBarMainDiv{
+    position: absolute;
+    z-index: 10000000000;
+    height: 480px;
+    width: 350px;
+   background-color: #f7f6f7;
+    right: 6%;
+    top: 14%;
+    /* border: 1px solid lightslategray; */
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5%;
+    font-size: 13px !important;
+    display: none;
+}
+.bankpayDiv{
+display: flex;
+align-items: center;
+gap: 4%;
+background-color: white;
+cursor: pointer;
+font-size: 13px !important;
+}
+.fundWatchList{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    font-size: 13px !important;
+}
+.insideDiv{
+    display: flex;
+    align-items: center;
+gap: 4%;
+background-color: white;
+font-size: 13px !important;
+}
+.LoggedUser{
+    display: flex;
+    align-items: center;
+    gap: 10%;
+    margin-left: 5%;
+    font-size: 13px !important;
+}
+.UserFirstLetter{
+    background-color: rgb(73, 43, 207);
+    padding: 80%;
+    padding-left: 110%;
+    padding-right: 110%;
+    border-radius: 50%;
+    color: whitesmoke;
+    font-size: 20px;
+    font-size: 13px !important;
+}
+.userNameEmail p{
+    line-height: 6px;
+    font-size: 13px !important;
+}
+.imgMargin{
+    margin-left: 4%;
+    font-size: 13px !important;
+
+}
+.onhover:hover{
+    background-color: #f7f6f7;
+    cursor: pointer;
+    font-size: 13px !important;
+}
+
+
+/* footerStart */
+.footerMainDiv{
+    position: absolute;
+    top: 370%;
+    z-index: 1;
+    margin: 0;
+  box-sizing: border-box;
+  font-weight: 400;
+  font-family: Roboto, system-ui;
+  -webkit-font-smoothing: antialiased;
+  margin-left: -3%;
+}
+.footerDiv {
+    width: 100%;
+    /* height: auto; */
+    /* position: relative; */
+    right: 22rem;
+    top: 25rem;
+    /* border: 1px solid #1e2232; */
+    background-color: #1e2232;
+    margin-top: 140px;
+    border: 1px solid #191c27;
+    /* margin-right: 35; */
+  }
+  .footer {
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    /* border: 1px solid black; */
+    display: flex;
+  }
+  .footer > div {
+    width: 22%;
+    margin: 1%;
+    /* border: 1px solid yellow; */
+  }
+  #footer11 img {
+    width: 120px;
+  }
+  #footer12 {
+    color: white;
+    margin-top: 18px;
+    font-size: 16px;
+    line-height: 25px;
+  }
+  #footer13 a {
+    color: white;
+    margin-top: 3px;
+    font-size: 16px;
+    line-height: 25px;
+  }
+  #footer14icons {
+    display: flex;
+    margin-top: 15px;
+  }
+  #footer14icons > div {
+    width: 20px;
+    height: 25px;
+    /* border: 1px solid red; */
+    margin: 19px;
+    margin-left: 1px;
+  }
+  #footer14icons > div a img {
+    width: 23px;
+    align-items: center;
+  }
+  #footer2 {
+    margin-left: 50px;
+  }
+  #footer21 {
+    color: white;
+    font-size: 18px;
+  }
+  #footer22 > a {
+    margin-top: 11px;
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-weight: 100;
+  }
+  #footer31 {
+    color: white;
+    font-size: 18px;
+  }
+  #footer32 > a {
+    margin-top: 11px;
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-weight: 100;
+  }
+  #footer41 {
+    color: white;
+    font-size: 18px;
+  }
+  #footer42 > a {
+    margin-top: 11px;
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-weight: 100;
+  }
+  #footer5 {
+    width: 80%;
+    margin: auto;
+  }
+  #footer6 {
+    width: 80%;
+    display: flex;
+    margin: auto;
+  
+    height: 25px;
+    margin-bottom: 80px;
+  }
+  #footer6 > div {
+    width: 45%;
+    margin: 2%;
+    /* border:1px solid red;  */
+    /* height: 50px; */
+  }
+  #footer61 {
+    color: white;
+    font-size: 16px;
+  }
+  #footer62 {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  #footer62 > div {
+    /* border: 1px solid white; */
+    margin: 5px 8px;
+    width: 200px;
+    border-radius: 8px;
+    margin-left: 5px;
+  }
+  #footer62 > div > img {
+    width: 200px;
+    height: 60px;
+  }
+  #header {
+    width: 100%;
+    /* height: auto; */
+    /* position: relative; */
+    right: 22rem;
+    top: 25rem;
+    /* border: 1px solid #1e2232; */
+    background-color: #191c27;
+    /* margin-top: -140px; */
+    border: 1px solid #191c27;
+    /* margin-right: 35; */
+  }
+  a {
+    color: #00d09c;
+    font-weight: 400;
+    text-transform: UPPERCASE;
+    text-decoration: none;
+    font-size: 18px;
+    letter-spacing: 2px;
+    cursor: pointer;
+  }
+  .or {
+    color: white;
+  }
+  .textheader {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  #version {
+    text-align: left;
+    margin-left: 70%;
+  }
+  #first {
+    margin-top: 20px;
+    padding-top: 20px;
+    /* border: 1px solid red; */
+    margin-left: 30px;
+    padding-left: 20px;
+  }
+  #second {
+    margin-top: 20px;
+    padding-top: 20px;
+    margin-left: 30px;
+    padding-left: 20px;
+  }
+  #third {
+    margin-top: 20px;
+    padding-top: 20px;
+    margin-left: 30px;
+    padding-left: 20px;
+  }
+  #fourth {
+    margin-top: 20px;
+    padding-top: 20px;
+    margin-left: 30px;
+    padding-left: 20px;
+  }
+  #fifth {
+    margin-top: 20px;
+    padding-top: 20px;
+    margin-left: 30px;
+    padding-left: 20px;
+  }
+  #sixth {
+    color: #726a6c;
+    margin-top: 20px;
+    padding-top: 20px;
+    margin-left: 30px;
+    padding-left: 20px;
+  }
+  .hoverEffect:hover {
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  #seventh {
+    margin-left: 30px;
+    padding-left: 20px;
+  }
+  #seventh > span {
+    color: white;
+    margin-top: 40px;
+    padding-top: 20px;
+  }
