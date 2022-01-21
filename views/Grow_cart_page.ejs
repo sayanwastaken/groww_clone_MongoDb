@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="/assets/favicon.ico" sizes="32x32" />
+  <title>
+    Groww - Online Demat, Trading and Direct Mutual Fund Investment in India
+  </title>
+
+
+  <link rel="stylesheet" href="/style/navbar.css" />
+  <link rel="stylesheet" href="/style/growcart.css">
+  <link rel="stylesheet" href="/style/paymentPopOut.css">
+  <link rel="stylesheet" href="/style/footermain.css">
+</head>
+
+<body>
+  <!-- ---------------------------------------NavBar start-------------------------------------- -->
+  <div id="navBar">
+    <div id="nav-bar" class="margin-mid">
+      <div id="groww-logo">
+        <a href="/Grow_cart_page"><img style="cursor: pointer"
+            src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/logo-dark-groww.83f43714.svg"
+            alt="Groww image" /></a>
+      </div>
+      <div id="after_logo">
+        <p style="cursor: pointer">Explore</p>
+        <p style="cursor: pointer">Investments</p>
+      </div>
+      <div id="search">
+        <img style="cursor: pointer" src="https://www.fabindia.com/file/general/icon-search-black.svg" alt="" />
+        <input type="text" placeholder="What you are looking for today?" id="sea" />
+      </div>
+      <div id="three-div">
+        <img style="cursor: pointer" src="https://cdn-icons-png.flaticon.com/128/3602/3602145.png" alt="" />
+        <img style="cursor: pointer" src="https://img.icons8.com/ios/2x/wallet.png" alt="" />
+        <img style="cursor: pointer"
+          src="https://cdn-icons.flaticon.com/png/128/2252/premium/2252291.png?token=exp=1639483415~hmac=1364994abc22dcae9ce2f747eba82ff2"
+          alt="" />
+      </div>
+    </div>
+  </div>
+  <!-- -------------------------------------NavBar end------------------------------------------------------- -->
+  <div class="container">
+    <div class="shoppingcart">
+      <h2 style="margin-bottom: 5px">My Cart</h2>
+      <hr style="width: 90%; text-align: left; margin-left: 25px" />
+      <div class="shoppinggrid"></div>
+    </div>
+    <div class="summary">
+      <!-- <hr style="width: 90%; text-align: left; margin-left: 0" /> -->
+      <span style="color: #44475b; font-size: 25px">
+        <h3>Amount Payble now</h3>
+        ₹
+      </span>
+      <span id="subtotal"></span>
+      <!-- <hr style="width: 90%; text-align: left; margin-left: 0" /> -->
+      <br />
+      <img class="safeimg" src="/mainpage/safecart.JPG" alt="" />
+      <br />
+      <button id="pp" class="proceed">Proceed to Pay</button>
+    </div>
+  </div>
+
+  <div class="popConatinerOnPaymentPage">
+    <div class="popConatinerOnPaymentPageMain">
+      <div class="popConatinerOnPaymentPageMainHead">
+        <p class="popConatinerOnPaymentPageMainHead1">DEPOSIT</p>
+        <p class="popConatinerOnPaymentPageMainHead2">WITHDRAW</p>
+      </div>
+      <div class="ChangeContent1">
+        <div class="AmountDiv">
+          <p class="EnterAmountText">ENTER AMOUNT</p><input type="text" name="" id="EnterAmount" placeholder="Amount">
+        </div>
+        <div class="ManualAmountDiv"><button>+100</button>
+          <button>+500</button>
+        </div>
+        <div class="payUsingAndMoreOptDiv">
+          <p class="payusing">Pay Using:</p>
+          <h4 class="moreOptionsh4">More Options</h4>
+        </div>
+        <div class="upiDIv"><svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg"
+            xmlnsXlink="http://www.w3.org/1999/xlink" height="28" width="28" class="wrs445UpiIcon">
+            <circle cx="15" cy="15" r="15" fill="url(#upi_icon_svg__pattern0)"></circle>
+            <defs>
+              <pattern id="upi_icon_svg__pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                <use xlink:href="#upi_icon_svg__image0" transform="matrix(.00571 0 0 .00571 .233 .081)"></use>
+              </pattern>
+              <image id="upi_icon_svg__image0" width="105" height="145"
+                xlink:href="data:image/png;base64,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">
+              </image>
+            </defs>
+          </svg><input type="text" name="" id="upInput" placeholder="ENTER UPI ID"></div>
+        <button class="depositBt">DEPOSIT</button>
+      </div>
+
+      <div class="ChangeContent2">
+        <div class="showWithDrawableAmount">
+          <p>Withdrawable</p>
+          <h4>₹0.00</h4>
+        </div>
+        <div class="AmountDiv">
+          <p class="EnterAmountText">ENTER AMOUNT</p><input oninput="changeBg()" type="text" name="" value=""
+            id="EnterAmount" placeholder="Amount">
+        </div>
+        <div class="checkForWithdrawAll"><input type="checkbox" name="" id="withdrawcheckBox">
+          <p class="withdrawcheckBoxtext">Withdraw All</p>
+        </div>
+        <button id="changebg" class="depositBt withdrawBtn">WITHDRAW MONEY</button>
+      </div>
+    </div>
+  </div>
+  <!-- ---------------------------------------fotter start----------------  -->
+  <div class="footerDiv">
+    <div class="footer">
+      <div id="footer1">
+        <div id="footer11">
+          <img
+            src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/logo-light-groww.1815ad63.svg"
+            alt="">
+        </div>
+        <div id="footer12">No.11, 2nd floor, 80 FT Road 4th Block, S.T Bed,
+          Koramangala
+          Bengaluru - 560034</div>
+        <div id="footer13"><a href="#">Contact Us</a></div>
+        <div id="footer14icons">
+          <div>
+            <a href="#"><img
+                src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/fb_icon_groww.1c94e937.svg"
+                alt=""></a>
+          </div>
+          <div>
+            <a href="#"><img
+                src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/twitter_icon_groww.4cb988f6.svg"
+                alt=""></a>
+          </div>
+          <div>
+            <a href="#"><img
+                src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/yt_icon_groww.ec96b677.svg"
+                alt=""></a>
+          </div>
+          <div>
+            <a href="#"><img
+                src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/instagram_icon_groww.0454c1a2.svg"
+                alt=""></a>
+          </div>
+          <div>
+            <a href="#"><img
+                src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/linkedin_icon_groww.b15f8240.svg"
+                alt=""></a>
+          </div>
+          <div>
+            <a href="#"><img
+                src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/telegram_icon_groww.f6524497.svg"
+                alt=""></a>
+          </div>
+
+        </div>
+      </div>
+      <div id="footer2">
+        <div id="footer21">PRODUCTS</div>
+        <div id="footer22">
+          <a href="#">Stocks</a>
+          <a href="#">Futures & Options</a>
+          <a href="#">Mutual Funds</a>
+          <a href="#">Fixed Deposit</a>
+          <a href="#">Gold</a>
+          <a href="#">US Stocks</a>
+        </div>
+      </div>
+      <div id="footer3">
+        <div id="footer31">GROWW</div>
+        <div id="footer32">
+          <a href="#">About Us</a>
+          <a href="#">Pricing</a>
+          <a href="#">Blog</a>
+          <a href="#">Media & Press</a>
+          <a href="#">Help and Support</a>
+        </div>
+      </div>
+      <div id="footer4">
+        <div id="footer41">QUICK LINKS</div>
+        <div id="footer42">
+          <a href="#">AMC Mutual Funds</a>
+          <a href="#">Calculators</a>
+          <a href="#">Glossary</a>
+          <a href="#">Open Demat Account</a>
+          <a href="#">Groww Digest</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div id="footer5">
+      <hr>
+    </div>
+
+    <div id="footer6">
+      <div id="footer61">ⓒ&nbsp;2016-2021 Groww, All rights reserved, Build with Love
+        in India
+      </div>
+      <div id="footer62">
+        <div id="footer62img">
+          <img
+            src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/google-play-badge.0547a72f.svg"
+            alt="">
+
+        </div>
+        <div id="footer63img">
+          <img
+            src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/app-store-logo.060773ea.svg"
+            alt="">
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- header last in main page -->
+  <div id="header">
+    <div id="first">
+      <span class="textheader">MOST POPULAR GROWW</span>
+      <span class="textheader" id="version">VERSION-2.0.8</span>
+    </div>
+    <div id="second">
+      <span class="textheader">STOCK MARKET INDICES:</span>
+      <span><a href="https://groww.in/indices/sp-bse-sensex">S&P BSE SENSEX</a></span>
+      <span class="or">|</span>
+      <span><a href="https://groww.in/indices/sp-bse">S&P BSE 100</a></span>
+      <span class="or">|</span>
+      <span><a href="https://groww.in/indices/nifty-218500">NIFTY100</a></span>
+      <span class="or">|</span>
+      <span><a href="https://groww.in/indices/nifty">NIFTY50</a></span>
+      <span class="or">|</span>
+      <span><a href="https://groww.in/indices/nifty-midcap">NIFTY MIDCAPS100</a></span>
+      <span class="or">|</span>
+      <span class="or"><a href="https://groww.in/indices/nifty-bank">NIFTY BANK</a></span>
+      <span class="or">|</span>
+      <span class="or"><a href="https://groww.in/indices/nifty-next">NIFTY NEXT50</a></span>
+    </div>
+    <div id="third">
+      <span class="textheader">PUPOLAR Mutual:</span>
+      <span><a href="https://groww.in/mutual-funds/axis-equity-fund-direct-growth">AXIS BLUECHIP FUND</a></span>
+      <span class="or">|</span>
+      <span><a href="https://groww.in/mutual-funds/motilal-oswal-s-p-500-index-fund-direct-growth">MOTILAL OSWAL S&P 500
+          INDEX FUND </a></span>
+      <span class="or">|</span>
+      <span><a href="https://groww.in/mutual-funds/parag-parikh-long-term-value-fund-direct-growth">PARAG PARIKH LONG
+          TERM EQUITY FUND</a></span>
+      <span class="or">|</span>
+      <span><a href="https://groww.in/mutual-funds/sbi-small-midcap-fund-direct-growth">SBI SMALL CAP FUND HDFC BALANCED
+          ADVANTAGE FUND </a></span>
+      <span class="or">|</span>
+      <span><a href="https://groww.in/mutual-funds/axis-long-term-equity-fund-direct-growth">AXIS LONG TERM EQUATY FUND
+        </a></span>
+      <span class="or">|</span>
+      <span><a href="https://groww.in/mutual-funds/uti-nifty-fund-direct-growth">UTI NIFTY INDEXFUND </a></span>
+      <span class="or">|</span>
+      <span><a href="https://groww.in/mutual-funds/axis-midcap-fund-direct-growth">AXIS MIDCAP FUND </a></span>
+      <span class="or">|</span>
+      <span><a href="https://groww.in/mutual-funds/sbi-bluechip-fund-direct-growth">SBI BLUECHIP FUND</a></span>
+      <span class="or">|</span>
+      <span><a href="https://groww.in/mutual-funds/mirae-asset-emerging-bluechip-fund-direct-growth">MIRAE ASSET
+          EMERGING BLUECHIP FUND </a></span>
+
+    </div>
+    <div id="fourth">
+      <span class="textheader">MUTUAL FUND COMPANCIES:</span>
+      <span><a href="https://groww.in/mutual-funds/amc/icici-prudential-mutual-funds">ICICI PRUDENTIAL</a></span>
+      <span class="or">|</span>
+      <span><a href="https://groww.in/mutual-funds/amc/hdfc-mutual-funds">HDFC</a></span>
+      <span class="or">|</span>
+      <span><a href="https://groww.in/mutual-funds/amc/reliance-mutual-funds">NIPPON INDIA</a></span>
+      <span class="or">|</span>
+      <span><a href="https://groww.in/mutual-funds/amc/aditya-birla-sunlife-mutual-funds">ADITYA BIRLA
+          SUNLIFE</a></span>
+      <span class="or">|</span>
+      <span><a href="https://groww.in/mutual-funds/amc/sbi-mutual-funds">SBI</a></span>
+      <span class="or">|</span>
+      <span><a href="https://groww.in/mutual-funds/amc/uti-mutual-funds">UTI</a></span>
+      <span class="or">|</span>
+      <span><a href="https://groww.in/mutual-funds/amc/franklin-templeton-mutual-funds">FRANKLIN</a></span>
+      <span class="or">|</span>
+      <span><a href="https://groww.in/mutual-funds/amc/kotak-mutual-funds">KOTAK MAHINDRA</a></span>
+      <span class="or">|</span>
+      <span><a href="https://groww.in/mutual-funds/amc/idfc-mutual-funds">IDFC</a></span>
+      <span class="or">|</span>
+      <span><a href="https://groww.in/mutual-funds/amc/idfc-mutual-funds">BOI AXA</a></span>
+      <span class="or">|</span>
+      <span><a href="https://groww.in/mutual-funds/amc/essel-mutual-funds">NAVI</a></span>
+      <span class="or">|</span>
+      <span><a href="https://groww.in/mutual-funds/amc/ppfas-mutual-funds">PPFAS</a></span>
+      <span class="or">|</span>
+      <span><a href="https://groww.in/mutual-funds/amc/iifl-mutual-funds">IIFL</a></span>
+      <span class="or">|</span>
+      <span><a href="https://groww.in/mutual-funds/amc/escorts-mutual-funds">QUANI</a></span>
+      <span class="or">|</span>
+      <span><a href="https://groww.in/mutual-funds/amc/shriram-mutual-funds">SHRIRAM</a></span>
+      <span class="or">|</span>
+      <span><a href="https://groww.in/mutual-funds/amc/sahara-mutual-funds">SAHARA</a></span>
+      <span class="or">|</span>
+      <span><a href="https://groww.in/mutual-funds/amc/iti-mutual-funds">ITI</a><span>
+
+    </div>
+    <div id="fifth">
+      <span class="textheader">TOOLS:</span>
+      <span><a>BROKERANGE CALCULATOR</a></span>
+      <span class="or">|</span>
+      <span><a>MARGIN CALCULATOR </a></span>
+      <span class="or">|</span>
+      <span><a>SIP CALCULATOR</a></span>
+      <span class="or">|</span>
+      <span><a>SWP CALCULATOR</a></span>
+      <span class="or">|</span>
+      <span><a>SUKANYA SAMRIDDHI YOJANA CALCULATOR</a></span>
+      <span class="or">|</span>
+      <span><a>MUTUAL FAUD CALCULATOR</a></span>
+      <span class="or">|</span>
+      <span><a>FD CALCULATOR</a></span>
+      <span class="or">|</span>
+      <span><a>RETURN CALCULATOR</a></span>
+      <span class="or">|</span>
+      <span><a>RD CALCULATOR</a></span>
+      <span class="or">|</span>
+      <span><a>EMI CALCULATOR</a></span>
+      <span class="or">|</span>
+      <span><a>PPF CALCULATOR</a></span>
+      <span class="or">|</span>
+      <span><a>EPF CALCULATOR</a></span>
+      <span class="or">|</span>
+      <span><a>NPS CALCULATOR</a></span>
+      <span class="or">|</span>
+      <span><a>GRATUITY CALCULATOR</a></span>
+    </div>
+    <div id="sixth">
+      <span class="hoverEffect">NSE</span>
+      <span>|</span>
+      <span class="hoverEffect">BSE</span>
+      <span>|</span>
+      <span class="hoverEffect">TERMS AND CONDITIONS</span>
+      <span>|</span>
+      <span class="hoverEffect">POLICIES AND PROCEDURES</span>
+      <span>|</span>
+      <span class="hoverEffect">REGULATORY & OTHER INFO</span>
+      <span>|</span>
+      <span class="hoverEffect">PRIVACY POLICY</span>
+      <span>|</span>
+      <span class="hoverEffect">DISCLOURE</span>
+      <span>|</span>
+      <span class="hoverEffect">SECURITY</span>
+      <span>|</span>
+      <span class="hoverEffect">DOWNLOAD FORMS</span>
+    </div>
+    <hr>
+    <div id="seventh">
+      <span>ABOUT GROWW</span>
+      <span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" height="20" width="20">
+          <path d="M0 0h24v24H0V0z" fill="none"></path>
+          <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path>
+          <path d="M0 0h24v24H0V0z" fill="none"></path>
+          <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path>
+        </svg></span>
+    </div>
+  </div>
+  </div>
+
+
+  <!-- footer end--------------------------------------------------------------------------- -->
+</body>
+
+</html>
+<script src="/JS/paymentPopOut.js"></script>
+
+<script type="module">
+  // import navbar from "/Navbar.js"
+  // console.log(navbar)
+
+  // let navBar=document.getElementById("navBar")
+  // navBar.innerHTML=navbar();
+
+  var cartData = JSON.parse(localStorage.getItem("cartData")) || [];
+  var sub = document.getElementById("subtotal");
+  var sum = carttotalprice(cartData);
+  sub.textContent = sum;
+
+  var sh = document.querySelector(".shoppinggrid");
+  var len = cartData.length;
+  sh.style = `grid-template-rows: repeat(${len}, 150px)`;
+  display(cartData);
+  function display(arr) {
+    sh.innerHTML = "";
+    arr.map(function (item) {
+      var div2 = document.createElement("div");
+      var head = document.createElement("h2");
+      head.textContent = item.name;
+      var sp1 = document.createElement("span");
+      sp1.textContent = "Amount: ₹" + item.price;
+      var br1 = document.createElement("br");
+
+      var sp3 = document.createElement("span");
+      sp3.setAttribute("class", "qnty");
+      sp3.textContent = "Quantity";
+
+      var b1 = document.createElement("button");
+      b1.setAttribute("class", "inc");
+      b1.textContent = "+";
+      var b2 = document.createElement("button");
+      b2.setAttribute("class", "show");
+      b2.textContent = "1";
+      var b3 = document.createElement("button");
+      b3.setAttribute("class", "inc");
+      b3.textContent = "-";
+      var br = document.createElement("br");
+      div2.append(head, sp1, br1, sp3, b1, b2, b3, br);
+
+      var div1 = document.createElement("div");
+      div1.innerHTML = `<img src=${item.logo}>`;
+
+      sh.append(div1);
+      sh.append(div2);
+      var btn = document.createElement("button");
+      btn.setAttribute("class", "removebtn");
+      btn.innerHTML = `<img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/lg/307/wastebasket_1f5d1-fe0f.png" alt="" class="src">`;
+      div2.append(btn);
+
+      btn.addEventListener("click", function () {
+        for (var i = 0; i < cartData.length; i++) {
+          if (cartData[i] == item) {
+            cartData.splice(i, 1);
+
+
+          }
+        }
+        localStorage.setItem("cartData", JSON.stringify(cartData));
+        var sub = document.getElementById("subtotal");
+        var t = +sub.textContent;
+        sub.textContent = t - Number(item.price);
+        display(cartData);
+      });
+      var counter = 1;
+      b1.addEventListener("click", function () {
+        if (counter >= 2) {
+          alert("Maximum 2 Quantity Allowed Per Item");
+          counter = 2
+          return;
+        }
+        counter++;
+        var price = counter * Number(item.price);
+
+        sp1.textContent = "Amount: ₹" + price;
+        b2.textContent = counter;
+        var sub = document.getElementById("subtotal");
+        var t = +sub.textContent;
+        sub.textContent = t + Number(item.price);
+      });
+      b3.addEventListener("click", function () {
+        counter = +b2.textContent;
+        if (counter < 2) {
+          return;
+        }
+        counter--;
+        var price = counter * Number(item.price);
+        sp1.textContent = "Price: ₹" + price;
+
+        b2.textContent = counter;
+
+        var sub = document.getElementById("subtotal");
+        var t = +sub.textContent;
+        sub.textContent = t - Number(item.price);
+      });
+    });
+  }
+
+  function carttotalprice(arr) {
+    var total = arr.reduce(function (a, item) {
+      return a + Number(item.price);
+    }, 0);
+    return total;
+  }
+
+  function signup() {
+    var sub = document.getElementById("subtotal").textContent;
+
+    localStorage.setItem("total_payment", sub);
+    window.location.href = "";
+  }
+
+  document.getElementById("pp").onclick = () => {
+    document.querySelector(".popConatinerOnPaymentPageMain").style.visibility = "visible"
+    document.querySelector(".container").style.opacity = "0.3"
+  }
+
+
+</script>
