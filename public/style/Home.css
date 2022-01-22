@@ -800,7 +800,18 @@ font-size: 13px !important;
 gap: 4%;
 background-color: white;
 font-size: 13px !important;
+
 }
+
+.logoutp{
+    display: flex;
+    align-items: center;
+gap: 4%;
+/* background-color: white; */
+font-size: 13px !important;
+color: black;
+}
+
 .LoggedUser{
     display: flex;
     align-items: center;

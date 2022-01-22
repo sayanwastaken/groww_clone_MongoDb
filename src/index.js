@@ -1,15 +1,17 @@
 const express=require('express')
 const path=require('path')
 const app=express()
-app.use(express.static("public"))
-app.set('view engine','ejs')
 
-
+const passport=require('./middleware/authentication.js')
+const cookieSession=require('cookie-session')
 
 app.use(cookieSession({
     name: 'tuto-session',
-    keys: ['key1', 'key2']
+    keys: ['key1']
   }));
+
+app.use(express.static("public"))
+app.set('view engine','ejs')
 
 app.use(passport.initialize());
 app.use(passport.session());
@@ -23,12 +25,6 @@ app.get(
     })
 );
 
-
-
-app.get('/user',(req,res)=>{
-
-  return  res.render('userAuthentication')
-})
 
 app.get('/auth/google',
   passport.authenticate('google', { scope: ['profile','email'] }));
@@ -73,6 +69,8 @@ app.get('/Grow_cart_page',(req,res)=>{
 
 app.get('/logout', (req, res) => {
   req.session = null;
+ 
+  
   req.logOut();
   res.redirect('/index');
 })
