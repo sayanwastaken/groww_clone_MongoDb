@@ -1,7 +1,6 @@
-const app=require('./index.js')
-
-app.listen(6789,()=>{
-
-    console.log("Listening at 6789");
-
-})
+const app = require("./index.js");
+const connect = require("./config/db");
+app.listen(6789, async () => {
+  await connect();
+  console.log("Listening at 6789");
+});
