@@ -71,4 +71,10 @@ app.get('/Grow_cart_page',(req,res)=>{
 
 })
 
+app.get('/logout', (req, res) => {
+  req.session = null;
+  req.logOut();
+  res.redirect('/index');
+})
+
 module.exports=app
