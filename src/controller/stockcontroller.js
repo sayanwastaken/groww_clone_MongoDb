@@ -1,32 +1,18 @@
 const express = require("express");
+const stockModel = require("../models/stock.model");
+const prodTemp = require("../models/pro.redis");
 
 const router = express.Router();
 
-const Stock = require("../models/stock.model");
-
-// router.post("/", async (req, res) => {
-//     try{
-//         const stock = await Stock.create(req.body);
-//         res.status(201).send({ product: stock });
-
-//     }
-//     catch(err){
-//         res.status(500).send(err)
-//     }
- 
-// });
+const redis = require("../config/redis");
 
 router.get("/", async (req, res) => {
-    try{
-        const stock = await Stock.find().lean().exec();
-        res.status(200).send({ product: stock });
-
-    }
-    catch(err){
-        res.status(500).send(err)
-    }
- 
+  try {
+    const stock = await stockModel.find().lean().exec();
+    res.status(200).send({ product: stock });
+  } catch (err) {
+    res.status(500).send(err);
+  }
 });
-
 
 module.exports = router;

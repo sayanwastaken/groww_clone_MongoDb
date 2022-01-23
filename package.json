@@ -17,6 +17,7 @@
     "mongoose": "^6.1.7",
     "passport": "^0.5.2",
     "passport-google-oauth2": "^0.2.0",
-    "passport-google-oauth20": "^2.0.0"
+    "passport-google-oauth20": "^2.0.0",
+    "redis": "^3.1.2"
   }
 }
