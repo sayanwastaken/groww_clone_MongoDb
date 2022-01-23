@@ -1,809 +1,325 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/assets/favicon.ico"
+      sizes="32x32"
+    />
+    <title>
+      Groww - Online Demat, Trading and Direct Mutual Fund Investment in India
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" type="image/png" href="/assets/favicon.ico" sizes="32x32" />
-  <title>
-    Groww - Online Demat, Trading and Direct Mutual Fund Investment in India
-  </title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
-    rel="stylesheet" />
+    <!-- <link rel="stylesheet" href="stocks.css"> -->
+    <link rel="stylesheet" href="/style/filters-MF.css" />
+  </head>
 
-  <!-- <link rel="stylesheet" href="stocks.css"> -->
-  <link rel="stylesheet" href="/style/filters-MF.css" />
-</head>
+  <body>
+    <div>
+      <!-- Navbarstart -->
+      <div id="nav-bar" class="margin-mid">
+        <div id="groww-logo">
+          <img
+            src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/logo-dark-groww.83f43714.svg"
+            alt="Groww image"
+          />
+        </div>
+        <div id="after_logo">
+          <p>Explore</p>
+          <p>Investments</p>
+        </div>
+        <div id="search">
+          <img
+            src="https://img.icons8.com/material-outlined/344/search.png"
+            alt=""
+          />
+          <input type="text" placeholder="What you are looking for today?" />
+        </div>
+        <div id="three-div">
+          <img src="https://cdn-icons-png.flaticon.com/128/3602/3602145.png" />
+          <img src="https://img.icons8.com/ios/2x/wallet.png" />
+        </div>
+      </div>
+      <hr />
 
-<body>
-  <div>
-    <!-- Navbarstart -->
-    <div id="nav-bar" class="margin-mid">
-      <div id="groww-logo">
-        <img
-          src="https://assets-netstorage.groww.in/web-assets/billion_groww_desktop/prod/build/client/images/logo-dark-groww.83f43714.svg"
-          alt="Groww image" />
-      </div>
-      <div id="after_logo">
-        <p>Explore</p>
-        <p>Investments</p>
-      </div>
-      <div id="search">
-        <img src="https://img.icons8.com/material-outlined/344/search.png" alt="" />
-        <input type="text" placeholder="What you are looking for today?" />
-      </div>
-      <div id="three-div">
-        <img src="https://cdn-icons-png.flaticon.com/128/3602/3602145.png" />
-        <img src="https://img.icons8.com/ios/2x/wallet.png" />
+      <!-- Navbar End -->
+
+      <!-- bank filter and MF  LEFT SIDE -->
+
+      <div id="filters-MF">
+        <div class="box-border shadow" style="height: 1100px">
+          <div id="left-part" class="Everybox">
+            <h4>FILTERS</h4>
+            <h4>Clear All</h4>
+          </div>
+          <hr />
+
+          <div id="ALL-fund">
+            <p>AMC</p>
+            <input type="text" placeholder="Search Mutual Fund Companies" />
+            <div id="Fund-list">
+              <ul>
+                <li>
+                  <input type="checkbox" /> Aditya Birla Sun Life Mutual Fund
+                </li>
+                <li><input type="checkbox" /> Axis Mutual Fund</li>
+                <li><input type="checkbox" /> BPN Paribas Mutual Fund</li>
+                <li><input type="checkbox" /> BOI AXA Mutual Fund</li>
+                <li><input type="checkbox" /> Baroda Mutual Fund</li>
+                <li><input type="checkbox" /> Canara Robeco Mutual Fund</li>
+                <li><input type="checkbox" /> Essel Mutual Fund</li>
+                <li>
+                  <input type="checkbox" /> Franklin Templetion Mutual Fund
+                </li>
+                <li><input type="checkbox" /> HDFC Mutual Fund</li>
+                <li><input type="checkbox" /> HSBC Mutual Fund</li>
+                <li><input type="checkbox" /> ICICI Prudential Mutual Fund</li>
+                <li><input type="checkbox" /> IDBI Mutual Fund</li>
+                <li><input type="checkbox" /> IDFC Mutual Fund</li>
+                <li><input type="checkbox" /> IIFL Mutual Fund</li>
+                <li><input type="checkbox" /> ITI Mutual Fund</li>
+                <li><input type="checkbox" /> Indiabulls Mutual Fund</li>
+                <li><input type="checkbox" /> IDBI Mutual Fund</li>
+                <li><input type="checkbox" /> Invesco Mutual Fund</li>
+                <li><input type="checkbox" /> JM Financial Mutual Fund</li>
+                <li><input type="checkbox" /> Kodak Mahindra Mutual Fund</li>
+                <li><input type="checkbox" /> L&T Mutual Fund</li>
+                <li><input type="checkbox" /> LIC Mutual Fund</li>
+                <li><input type="checkbox" /> Mahindra Menulife Mutual Fund</li>
+                <li><input type="checkbox" /> Mahindra Mutual Fund</li>
+                <li><input type="checkbox" /> Mirae Mutual Fund</li>
+                <li><input type="checkbox" /> Motilal Oswal Mutual Fund</li>
+              </ul>
+            </div>
+            <hr />
+
+            <!-- category Start-->
+            <div id="category" class="Everybox">
+              <p class="p-marg">Category</p>
+              <div>
+                <li><input type="checkbox" />Debt</li>
+                <li><input type="checkbox" />Equity</li>
+                <li><input type="checkbox" />Hybrid</li>
+                <li><input type="checkbox" />Other</li>
+                <li><input type="checkbox" />Solution Oriented</li>
+              </div>
+            </div>
+            <hr />
+            <!-- category Ends-->
+
+            <!-- Risk -->
+            <div class="Everybox">
+              <p class="p-marg">Risk</p>
+              <div>
+                <li><input type="checkbox" />Low</li>
+                <li><input type="checkbox" />Moderate Low</li>
+                <li><input type="checkbox" />Moderate</li>
+                <li><input type="checkbox" />Moderate High</li>
+                <li><input type="checkbox" />High</li>
+                <li><input type="checkbox" />Very High</li>
+              </div>
+            </div>
+            <hr />
+            <!-- Risk End -->
+
+            <!-- fund size -->
+            <div class="Everybox">
+              <p class="p-marg">Fund Size</p>
+              <div>
+                <li><input type="checkbox" />Upto 1,000Cr</li>
+                <li><input type="checkbox" />Upto 2,000Cr</li>
+                <li><input type="checkbox" />Upto 5,000Cr</li>
+                <li><input type="checkbox" />Upto 10,000Cr</li>
+              </div>
+            </div>
+            <hr />
+            <!-- fund size end-->
+
+            <div class="Everybox">
+              <p class="p-marg">Availabe To Invest</p>
+              <div>
+                <li><input type="checkbox" />SIP</li>
+                <li><input type="checkbox" />ONE-TIME</li>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- bank filter and MF  LEFT SIDE  End-->
+
+        <!-- RIGHT-SIDE Div for funds -->
+
+        <div class="box-border">
+          <div id="All-MFs">
+            <p>All Mutual Funds</p>
+            <div>
+              <select id="item_select">
+                <option>Reference</option>
+                <option value="rates">Ratings - High To Low</option>
+                <option value="returns">Returns - High To Low</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- All funds list -->
+
+          <div class="All-funds shadow"></div>
+          <!-- All funds list End -->
+        </div>
+
+        <!-- Right-SIDE Div for funds End-->
       </div>
     </div>
-    <hr />
-
-    <!-- Navbar End -->
-
-    <!-- bank filter and MF  LEFT SIDE -->
-
-    <div id="filters-MF">
-      <div class="box-border shadow" style="height: 1100px">
-        <div id="left-part" class="Everybox">
-          <h4>FILTERS</h4>
-          <h4>Clear All</h4>
-        </div>
-        <hr />
-
-        <div id="ALL-fund">
-          <p>AMC</p>
-          <input type="text" placeholder="Search Mutual Fund Companies" />
-          <div id="Fund-list">
-            <ul>
-              <li>
-                <input type="checkbox" /> Aditya Birla Sun Life Mutual Fund
-              </li>
-              <li><input type="checkbox" /> Axis Mutual Fund</li>
-              <li><input type="checkbox" /> BPN Paribas Mutual Fund</li>
-              <li><input type="checkbox" /> BOI AXA Mutual Fund</li>
-              <li><input type="checkbox" /> Baroda Mutual Fund</li>
-              <li><input type="checkbox" /> Canara Robeco Mutual Fund</li>
-              <li><input type="checkbox" /> Essel Mutual Fund</li>
-              <li>
-                <input type="checkbox" /> Franklin Templetion Mutual Fund
-              </li>
-              <li><input type="checkbox" /> HDFC Mutual Fund</li>
-              <li><input type="checkbox" /> HSBC Mutual Fund</li>
-              <li><input type="checkbox" /> ICICI Prudential Mutual Fund</li>
-              <li><input type="checkbox" /> IDBI Mutual Fund</li>
-              <li><input type="checkbox" /> IDFC Mutual Fund</li>
-              <li><input type="checkbox" /> IIFL Mutual Fund</li>
-              <li><input type="checkbox" /> ITI Mutual Fund</li>
-              <li><input type="checkbox" /> Indiabulls Mutual Fund</li>
-              <li><input type="checkbox" /> IDBI Mutual Fund</li>
-              <li><input type="checkbox" /> Invesco Mutual Fund</li>
-              <li><input type="checkbox" /> JM Financial Mutual Fund</li>
-              <li><input type="checkbox" /> Kodak Mahindra Mutual Fund</li>
-              <li><input type="checkbox" /> L&T Mutual Fund</li>
-              <li><input type="checkbox" /> LIC Mutual Fund</li>
-              <li><input type="checkbox" /> Mahindra Menulife Mutual Fund</li>
-              <li><input type="checkbox" /> Mahindra Mutual Fund</li>
-              <li><input type="checkbox" /> Mirae Mutual Fund</li>
-              <li><input type="checkbox" /> Motilal Oswal Mutual Fund</li>
-            </ul>
-          </div>
-          <hr />
-
-          <!-- category Start-->
-          <div id="category" class="Everybox">
-            <p class="p-marg">Category</p>
-            <div>
-              <li><input type="checkbox" />Debt</li>
-              <li><input type="checkbox" />Equity</li>
-              <li><input type="checkbox" />Hybrid</li>
-              <li><input type="checkbox" />Other</li>
-              <li><input type="checkbox" />Solution Oriented</li>
-            </div>
-          </div>
-          <hr />
-          <!-- category Ends-->
-
-          <!-- Risk -->
-          <div class="Everybox">
-            <p class="p-marg">Risk</p>
-            <div>
-              <li><input type="checkbox" />Low</li>
-              <li><input type="checkbox" />Moderate Low</li>
-              <li><input type="checkbox" />Moderate</li>
-              <li><input type="checkbox" />Moderate High</li>
-              <li><input type="checkbox" />High</li>
-              <li><input type="checkbox" />Very High</li>
-            </div>
-          </div>
-          <hr />
-          <!-- Risk End -->
-
-          <!-- fund size -->
-          <div class="Everybox">
-            <p class="p-marg">Fund Size</p>
-            <div>
-              <li><input type="checkbox" />Upto 1,000Cr</li>
-              <li><input type="checkbox" />Upto 2,000Cr</li>
-              <li><input type="checkbox" />Upto 5,000Cr</li>
-              <li><input type="checkbox" />Upto 10,000Cr</li>
-            </div>
-          </div>
-          <hr />
-          <!-- fund size end-->
-
-          <div class="Everybox">
-            <p class="p-marg">Availabe To Invest</p>
-            <div>
-              <li><input type="checkbox" />SIP</li>
-              <li><input type="checkbox" />ONE-TIME</li>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- bank filter and MF  LEFT SIDE  End-->
-
-      <!-- RIGHT-SIDE Div for funds -->
-
-      <div class="box-border">
-        <div id="All-MFs">
-          <p>All Mutual Funds</p>
-          <div>
-            <select id="item_select">
-              <option>Reference</option>
-              <option value="rates">Ratings - High To Low</option>
-              <option value="returns">Returns - High To Low</option>
-            </select>
-          </div>
-        </div>
-
-        <!-- All funds list -->
-
-        <div class="All-funds shadow"></div>
-        <!-- All funds list End -->
-      </div>
-
-      <!-- Right-SIDE Div for funds End-->
-    </div>
-  </div>
-</body>
-
+  </body>
 </html>
 <script type="module">
-  let array = [
-    {
-      id: "001",
-      product_image: "https://groww.in/images/partners/icici_groww.svg",
-      product_name: "ICICI Prudential Technology",
-      amc: "ICICI",
-      risk: "Very High Risk",
-      category: "Equity",
-      rating: "5",
-      percentage_interval: ["2.32%", "95.53%", "41.88%"],
-      fund_Category: "4.5",
-      fund_size: "4532.50 Cr",
-      nav: "172.76",
-      return_percentage: "36.76",
-      price: "0",
-      symbol: "000002.SHZ",
-    },
-    {
-      id: "002",
-      product_image: "https://groww.in/images/partners/tata_groww.svg",
-      product_name: "TATA Digital India Fund Direct Growth",
-      amc: "TATA",
-      risk: "Low Risk",
-      category: "Debt",
-      rating: "5",
-      percentage_interval: ["2.06%", "91.46%", "40.94%"],
-      fund_Category: "8.2",
-      fund_size: "8232.50 Cr",
-      nav: "41.71",
-      return_percentage: "36.44",
-      price: "0",
-      symbol: "IBM",
-    },
-    {
-      id: "003",
-      product_image: "https://groww.in/images/partners/axis_groww.svg",
-      product_name: "Axis Small Cap Fund Direct Growth",
-      amc: "Axis",
-      risk: "Moderate Risk",
-      category: "Hybrid",
-      rating: "3",
-      percentage_interval: ["1.03%", "77.84%", "34.28%"],
-      fund_Category: "1.2",
-      fund_size: "1249.30 Cr",
-      nav: "65.35",
-      return_percentage: "26.05",
-      price: "0",
-      symbol: "TSCO.LON",
-    },
-    {
-      id: "004",
-      product_image: "https://groww.in/images/partners/ppfas_groww.svg",
-      product_name: "Paragh Parikh Flexi Cap Fund Direct Growth",
-      amc: "Paragh Parikh",
-      risk: "Very High Risk",
-      category: "Equity",
-      rating: "3",
-      percentage_interval: ["1.22%", "64.55%", "31.13%"],
-      fund_Category: "0.8",
-      fund_size: "828.10 Cr",
-      nav: "53.79",
-      return_percentage: "24.91",
-      price: "0",
-      symbol: "SHOP.TRT",
-    },
-    {
-      id: "005",
-      product_image: "https://groww.in/images/partners/uti_groww.svg",
-      product_name: "UTI Flexi Cap Fund Direct Growth",
-      amc: "UTI",
-      risk: "Very High Risk",
-      category: "Debt",
-      rating: "4",
-      percentage_interval: ["1.59%", "66.88%", "28.50%"],
-      fund_Category: "1.8",
-      fund_size: "1835.60 Cr",
-      nav: "281.65",
-      return_percentage: "21.47",
-      price: "0",
-      symbol: "GPV.TRV",
-    },
-    {
-      id: "006",
-      product_image: "https://groww.in/images/partners/kotak_groww.svg",
-      product_name: "Kotak Bluechip Fund Direct Growth",
-      amc: "Kotak",
-      risk: "Moderate Risk",
-      category: "Hybrid",
-      rating: "4",
-      percentage_interval: ["1.35%", "56.73%", "23.95%"],
-      fund_Category: "3.8",
-      fund_size: "3289.90 Cr",
-      nav: "424.52",
-      return_percentage: "18.48",
-      price: "0",
-      symbol: "DAI.DEX",
-    },
-    {
-      id: "007",
-      product_image: "https://groww.in/images/partners/birla_groww.svg",
-      product_name: "Aditya Birla Sun Life Corporate Bond",
-      amc: "Aditya Birla",
-      risk: "Low Risk",
-      category: "Equity",
-      rating: "3",
-      percentage_interval: ["0.01%", "4.90%", "9.12%"],
-      fund_Category: "0.7",
-      fund_size: "782.10 Cr",
-      nav: "89.57",
-      return_percentage: "2.17",
-      price: "0",
-      symbol: "RELIANCE.BSE",
-    },
-    {
-      id: "008",
-      product_image: "https://groww.in/images/partners/hdfc_groww.svg",
-      product_name: "HDFC Index Sensex Direct Plan Growth",
-      amc: "HDFC",
-      risk: "Moderate Risk",
-      category: "Debt",
-      rating: "4",
-      percentage_interval: ["1.40%", "52.53%", "21.32%"],
-      fund_Category: "6.7",
-      fund_size: "6719.30 Cr",
-      nav: "549.44",
-      return_percentage: "17.16",
-      price: "0",
-      symbol: "600104.SHH",
-    },
-    {
-      id: "009",
-      product_image: "https://groww.in/images/partners/sbi_groww.svg",
-      product_name: "SBI Technology Oppurtunities Fund Direct Growth",
-      amc: "SBI",
-      risk: "Very High Risk",
-      category: "Hybrid",
-      rating: "4",
-      percentage_interval: ["2.09%", "83.30%", "38.09%"],
-      fund_Category: "5.8",
-      fund_size: "5816.80 Cr",
-      nav: "168.57",
-      return_percentage: "32.96",
-      price: "0",
-      symbol: "000002.SHZ",
-    },
-    {
-      id: "010",
-      product_image: "https://groww.in/images/partners/nippon_groww.png",
-      product_name: "Nippon India Pharma",
-      amc: "Nippon India Pharma",
-      risk: "Low Risk",
-      category: "Equity",
-      rating: "5",
-      percentage_interval: ["0.96%", "37.18%", "25.98%"],
-      fund_Category: "3.6",
-      fund_size: "3610.60 Cr",
-      nav: "325.24",
-      return_percentage: "9.61",
-      price: "0",
-      symbol: "IBM",
-    },
-    {
-      id: "011",
-      product_image: "https://groww.in/images/partners/icici_groww.svg",
-      product_name: "ICICI Prudential Commodities Fund Direct Growth",
-      amc: "ICICI",
-      risk: "Moderate Risk",
-      category: "Debt",
-      rating: "4",
-      percentage_interval: ["1.87%", "132.05%", "36.71%"],
-      fund_Category: "7.5",
-      fund_size: "7581.50 Cr",
-      nav: "26.11",
-      return_percentage: "2.57",
-      price: "0",
-      symbol: "TSCO.LON",
-    },
-    {
-      id: "012",
-      product_image: "https://groww.in/images/partners/tata_groww.svg",
-      product_name: "TATA Buisness Cycle Fund Direct Growth",
-      amc: "TATA",
-      risk: "Very High Risk",
-      category: "Equity",
-      rating: "4",
-      percentage_interval: ["1.64%", "64.11%", "42.79%"],
-      fund_Category: "3.6",
-      fund_size: "3681.50 Cr",
-      nav: "10.76",
-      return_percentage: "26.98",
-      price: "0",
-      symbol: "SHOP.TRT",
-    },
-    {
-      id: "013",
-      product_image: "https://groww.in/images/partners/axis_groww.svg",
-      product_name: "Axis Mid Cap Direct Growth",
-      amc: "Axis",
-      risk: "Low Risk",
-      category: "Debt",
-      rating: "4",
-      percentage_interval: ["1.39%", "67.27%", "29.53%"],
-      fund_Category: "5.8",
-      fund_size: "5189.30 Cr",
-      nav: "126.81",
-      return_percentage: "32.11",
-      price: "0",
-      symbol: "GPV.TRV",
-    },
-    {
-      id: "014",
-      product_image: "https://groww.in/images/partners/hdfc_groww.svg",
-      product_name: "HDFC Short Term Debt Fund Direct Plan Growth",
-      amc: "HDFC",
-      risk: "Very High Risk",
-      category: "Equity",
-      rating: "3",
-      percentage_interval: ["3.70%", "79.14%", "27.19%"],
-      fund_Category: "3.1",
-      fund_size: "3100.80 Cr",
-      nav: "51.44",
-      return_percentage: "19.29",
-      price: "0",
-      symbol: "DAI.DEX",
-    },
-    {
-      id: "015",
-      product_image: "https://groww.in/images/partners/sbi_groww.svg",
-      product_name: "SBI Banking & Financial Services Fund Direct Growth",
-      amc: "SBI",
-      risk: "Moderate Risk",
-      category: "Debt",
-      rating: "5",
-      percentage_interval: ["0.68%", "128.14%", "24.15%"],
-      fund_Category: "4.6",
-      fund_size: "4619.70 Cr",
-      nav: "95.13",
-      return_percentage: "28.15",
-      price: "0",
-      symbol: "RELIANCE.BSE",
-    },
-    {
-      id: "016",
-      product_image: "https://groww.in/images/partners/icici_groww.svg",
-      product_name: "ICICI Prudential Short term Fund Direct Plan Growth",
-      amc: "ICICI",
-      risk: "Very High Risk",
-      category: "Equity",
-      rating: "5",
-      percentage_interval: ["1.97%", "82.12%", "46.67%"],
-      fund_Category: "4.5",
-      fund_size: "4532.50 Cr",
-      nav: "172.76",
-      return_percentage: "36.76",
-      price: "0",
-      symbol: "000002.SHZ",
-    },
-    {
-      id: "017",
-      product_image: "https://groww.in/images/partners/tata_groww.svg",
-      product_name: "TATA Large & Mid Cap Fund Direct Growth",
-      amc: "TATA",
-      risk: "Low Risk",
-      category: "Debt",
-      rating: "5",
-      percentage_interval: ["1.98%", "93.81%", "38.97%"],
-      fund_Category: "8.2",
-      fund_size: "8232.50 Cr",
-      nav: "41.71",
-      return_percentage: "36.44",
-      price: "0",
-      symbol: "IBM",
-    },
-    {
-      id: "018",
-      product_image: "https://groww.in/images/partners/axis_groww.svg",
-      product_name: "Axis Bluechip Fund Direct Growth",
-      amc: "Axis",
-      risk: "Moderate Risk",
-      category: "Hybrid",
-      rating: "3",
-      percentage_interval: ["0.97%", "87.91%", "32.39%"],
-      fund_Category: "1.2",
-      fund_size: "1249.30 Cr",
-      nav: "65.35",
-      return_percentage: "26.05",
-      price: "0",
-      symbol: "TSCO.LON",
-    },
-    {
-      id: "019",
-      product_image: "https://groww.in/images/partners/ppfas_groww.svg",
-      product_name: "Paragh Parikh Tax Server Fund Direct Growth",
-      amc: "Paragh Parikh",
-      risk: "High Risk",
-      category: "Equity",
-      rating: "3",
-      percentage_interval: ["0.91%", "72.28%", "33.14%"],
-      fund_Category: "0.8",
-      fund_size: "828.10 Cr",
-      nav: "53.79",
-      return_percentage: "24.91",
-      price: "0",
-      symbol: "SHOP.TRT",
-    },
-    {
-      id: "020",
-      product_image: "https://groww.in/images/partners/uti_groww.svg",
-      product_name: "UTI Nifty Index Fund Direct Growth",
-      amc: "UTI",
-      risk: "High Risk",
-      category: "Debt",
-      rating: "3",
-      percentage_interval: ["0.14%", "81.34%", "15.14%"],
-      fund_Category: "1.8",
-      fund_size: "1835.60 Cr",
-      nav: "281.65",
-      return_percentage: "21.47",
-      price: "0",
-      symbol: "GPV.TRV",
-    },
-    {
-      id: "021",
-      product_image: "https://groww.in/images/partners/kotak_groww.svg",
-      product_name: "Kotak Smallcap Fund Direct Growth",
-      amc: "Kotak",
-      risk: "Moderate Risk",
-      category: "Hybrid",
-      rating: "4",
-      percentage_interval: ["2.16%", "65.14%", "21.58%"],
-      fund_Category: "3.8",
-      fund_size: "3289.90 Cr",
-      nav: "424.52",
-      return_percentage: "18.48",
-      price: "0",
-      symbol: "DAI.DEX",
-    },
-    {
-      id: "022",
-      product_image: "https://groww.in/images/partners/birla_groww.svg",
-      product_name: "Aditya Birla Sun Life Digital India Fund Direct Growth",
-      amc: "Aditya Birla",
-      risk: "Low Risk",
-      category: "Equity",
-      rating: "3",
-      percentage_interval: ["0.91%", "24.15%", "19.92%"],
-      fund_Category: "0.7",
-      fund_size: "782.10 Cr",
-      nav: "89.57",
-      return_percentage: "2.17",
-      price: "0",
-      symbol: "RELIANCE.BSE",
-    },
-    {
-      id: "023",
-      product_image: "https://groww.in/images/partners/hdfc_groww.svg",
-      product_name: "HDFC Index Fund 50 Direct Plan Growth",
-      amc: "HDFC",
-      risk: "Moderate Risk",
-      category: "Debt",
-      rating: "4",
-      percentage_interval: ["3.13%", "64.18%", "25.31%"],
-      fund_Category: "6.7",
-      fund_size: "6719.30 Cr",
-      nav: "549.44",
-      return_percentage: "17.16",
-      price: "0",
-      symbol: "600104.SHH",
-    },
-    {
-      id: "024",
-      product_image: "https://groww.in/images/partners/sbi_groww.svg",
-      product_name: "SBI Small Cap Fund Direct Growth",
-      amc: "SBI",
-      risk: "High Risk",
-      category: "Hybrid",
-      rating: "4",
-      percentage_interval: ["1.18%", "72.19%", "14.19%"],
-      fund_Category: "5.8",
-      fund_size: "5816.80 Cr",
-      nav: "168.57",
-      return_percentage: "32.96",
-      price: "0",
-      symbol: "000002.SHZ",
-    },
-    {
-      id: "025",
-      product_image: "https://groww.in/images/partners/nippon_groww.png",
-      product_name: "Nippon India Small Cap Fund Direct Growth",
-      amc: "Nippon India Pharma",
-      risk: "Low Risk",
-      category: "Equity",
-      rating: "4",
-      percentage_interval: ["1.56%", "25.91%", "18.19%"],
-      fund_Category: "3.6",
-      fund_size: "3610.60 Cr",
-      nav: "325.24",
-      return_percentage: "9.61",
-      price: "0",
-      symbol: "IBM",
-    },
-    {
-      id: "026",
-      product_image: "https://groww.in/images/partners/icici_groww.svg",
-      product_name: "ICICI Prudential Small Cap Fund Direct Growth",
-      amc: "ICICI",
-      risk: "Moderate Risk",
-      category: "Debt",
-      rating: "5",
-      percentage_interval: ["3.18%", "85.18%", "18.01%"],
-      fund_Category: "7.5",
-      fund_size: "7581.50 Cr",
-      nav: "26.11",
-      return_percentage: "2.57",
-      price: "0",
-      symbol: "TSCO.LON",
-    },
-    {
-      id: "027",
-      product_image: "https://groww.in/images/partners/tata_groww.svg",
-      product_name: "TATA India Tax Savings Fund Direct Growth",
-      amc: "TATA",
-      risk: "Very High Risk",
-      category: "Equity",
-      rating: "4",
-      percentage_interval: ["2.18%", "75.19%", "38.17%"],
-      fund_Category: "3.6",
-      fund_size: "3681.50 Cr",
-      nav: "10.76",
-      return_percentage: "26.98",
-      price: "0",
-      symbol: "SHOP.TRT",
-    },
-    {
-      id: "028",
-      product_image: "https://groww.in/images/partners/axis_groww.svg",
-      product_name: "Axis Flexi Cap Direct Growth",
-      amc: "Axis",
-      risk: "Low Risk",
-      category: "Debt",
-      rating: "4",
-      percentage_interval: ["2.17%", "71.19%", "37.18%"],
-      fund_Category: "5.8",
-      fund_size: "5189.30 Cr",
-      nav: "126.81",
-      return_percentage: "32.11",
-      price: "0",
-      symbol: "GPV.TRV",
-    },
-    {
-      id: "029",
-      product_image: "https://groww.in/images/partners/hdfc_groww.svg",
-      product_name: "HDFC Small Cap Fund Direct Plan Growth",
-      amc: "HDFC",
-      risk: "Very High Risk",
-      category: "Equity",
-      rating: "3",
-      percentage_interval: ["1.18%", "84.18%", "37.18%"],
-      fund_Category: "3.1",
-      fund_size: "3100.80 Cr",
-      nav: "51.44",
-      return_percentage: "19.29",
-      price: "0",
-      symbol: "DAI.DEX",
-    },
-    {
-      id: "030",
-      product_image: "https://groww.in/images/partners/sbi_groww.svg",
-      product_name: "SBI Contra Fund Direct Growth",
-      amc: "SBI",
-      risk: "Moderate Risk",
-      category: "Debt",
-      rating: "5",
-      percentage_interval: ["1.28%", "82.26%", "32.18%"],
-      fund_Category: "4.6",
-      fund_size: "4619.70 Cr",
-      nav: "95.13",
-      return_percentage: "28.15",
-      price: "0",
-      symbol: "RELIANCE.BSE",
-    },
-  ];
+  async function getData() {
+    let data = await fetch("http://localhost:6789/stocks");
+    let res = await data.json();
+    let array = res.product;
+    let information = [];
+    showdata();
+    function showdata() {
+      array.forEach((product) => {
+        // information.push(product);
 
-  // let information = [];
-  function showdata() {
-    array.forEach((product) => {
-      // information.push(product);
+        //   console.log('product:', product)
+        let box = document.querySelector(".All-funds");
 
-      //   console.log('product:', product)
-      let box = document.querySelector(".All-funds");
+        let div = document.createElement("div");
+        div.setAttribute("class", "MFs");
+        div.style.cursor = "pointer";
 
-      let div = document.createElement("div");
-      div.setAttribute("class", "MFs");
-      div.style.cursor = "pointer";
+        div.addEventListener("click", () => {
+          async function clickedProduct() {
+            await fetch("http://localhost:6789/redis_pro/clicked", {
+              method: "POST",
+              body: JSON.stringify(product),
+              headers: {
+                "Content-type": "application/json",
+              },
+            });
+            window.location.href = "stockPage";
+          }
+          clickedProduct();
+        });
 
-      div.addEventListener("click", () => {
-        localStorage.setItem("productData", JSON.stringify(product));
-        window.location.href = "stockPage";
+        let url = product.product_image;
+        let img = document.createElement("img");
+        img.src = url;
+        // img.style.border = "1px solid black";
+
+        let div_main = document.createElement("div");
+        div_main.setAttribute("class", "All-inline");
+
+        let div1 = document.createElement("div");
+        let p1 = document.createElement("p");
+        let h_6 = document.createElement("h5");
+        p1.innerText = product.product_name;
+        p1.style.marginBottom = "0px";
+        h_6.innerHTML =
+          product.risk +
+          "&nbsp&nbsp;&#8226;&nbsp;&nbsp" +
+          product.category +
+          "&nbsp;&nbsp;&#8226;&nbsp;&nbsp;" +
+          product.rating +
+          "&nbsp;&#9733;";
+        h_6.style.marginBottom = "0px";
+        div1.append(p1, h_6);
+
+        let div2_A = document.createElement("div");
+
+        let div2 = document.createElement("div");
+        div2.setAttribute("class", "Yrs_cols");
+        div2.style.marginBottom = "0px";
+        let p2 = document.createElement("p");
+        let p3 = document.createElement("p");
+        let p4 = document.createElement("p");
+
+        let div2_2 = document.createElement("div");
+        div2_2.setAttribute("class", "Yrs_cols");
+        div2.style.marginTop = "0px";
+
+        let in_p1 = document.createElement("p");
+        let in_p2 = document.createElement("p");
+        let in_p3 = document.createElement("p");
+
+        p2.innerText = product.percentage_interval[0];
+        p2.style.marginBottom = "0px";
+        p2.style.marginRight = "20px";
+
+        p3.innerText = product.percentage_interval[1];
+        p3.style.marginBottom = "0px";
+        p3.style.marginRight = "20px";
+
+        p4.innerText = product.percentage_interval[2];
+        p4.style.marginBottom = "0px";
+        p4.style.marginRight = "20px";
+
+        in_p1.innerText = "1D";
+        in_p1.style.marginTop = "5px";
+        in_p1.style.marginRight = "55px";
+        in_p1.style.marginLeft = "8px";
+        in_p1.style.fontSize = "12px";
+
+        in_p2.innerText = "1Y";
+        in_p2.style.marginTop = "5px";
+        in_p2.style.marginRight = "55px";
+        in_p2.style.fontSize = "12px";
+
+        in_p3.innerText = "3Y";
+        in_p3.style.marginTop = "5px";
+        in_p3.style.fontSize = "12px";
+        // in_p3.style.marginRight = "35px";
+
+        div2.append(p2, p3, p4);
+        div2_2.append(in_p1, in_p2, in_p3);
+
+        div2_A.append(div2, div2_2);
+
+        div_main.append(div1, div2_A);
+
+        let end = document.createElement("hr");
+        // end.style.backgroundColor = "red";
+        end.style.border = "1px solid #DCDCDC";
+
+        div.append(img, div_main);
+        box.append(div, end);
       });
+    }
 
-      let url = product.product_image;
-      let img = document.createElement("img");
-      img.src = url;
-      // img.style.border = "1px solid black";
+    document.getElementById("item_select").onchange = () => {
+      // console.log("work")
+      let val = document.getElementById("item_select").value;
+      if (val == "rates") {
+        // console.log('val:', val)
+        array.sort(function (a, b) {
+          return b.rating - a.rating;
+        });
+        let element = document.querySelector(".All-funds");
+        element.innerHTML = " ";
+        showdata();
+      }
 
-      let div_main = document.createElement("div");
-      div_main.setAttribute("class", "All-inline");
+      if (val == "returns") {
+        array.sort(function (a, b) {
+          return b.return_percentage - a.return_percentage;
+        });
 
-      let div1 = document.createElement("div");
-      let p1 = document.createElement("p");
-      let h_6 = document.createElement("h5");
-      p1.innerText = product.product_name;
-      p1.style.marginBottom = "0px";
-      h_6.innerHTML =
-        product.risk +
-        "&nbsp&nbsp;&#8226;&nbsp;&nbsp" +
-        product.category +
-        "&nbsp;&nbsp;&#8226;&nbsp;&nbsp;" +
-        product.rating +
-        "&nbsp;&#9733;";
-      h_6.style.marginBottom = "0px";
-      div1.append(p1, h_6);
-
-      let div2_A = document.createElement("div");
-
-      let div2 = document.createElement("div");
-      div2.setAttribute("class", "Yrs_cols");
-      div2.style.marginBottom = "0px";
-      let p2 = document.createElement("p");
-      let p3 = document.createElement("p");
-      let p4 = document.createElement("p");
-
-      let div2_2 = document.createElement("div");
-      div2_2.setAttribute("class", "Yrs_cols");
-      div2.style.marginTop = "0px";
-
-      let in_p1 = document.createElement("p");
-      let in_p2 = document.createElement("p");
-      let in_p3 = document.createElement("p");
-
-      p2.innerText = product.percentage_interval[0];
-      p2.style.marginBottom = "0px";
-      p2.style.marginRight = "20px";
-
-      p3.innerText = product.percentage_interval[1];
-      p3.style.marginBottom = "0px";
-      p3.style.marginRight = "20px";
-
-      p4.innerText = product.percentage_interval[2];
-      p4.style.marginBottom = "0px";
-      p4.style.marginRight = "20px";
-
-      in_p1.innerText = "1D";
-      in_p1.style.marginTop = "5px";
-      in_p1.style.marginRight = "55px";
-      in_p1.style.marginLeft = "8px";
-      in_p1.style.fontSize = "12px";
-
-      in_p2.innerText = "1Y";
-      in_p2.style.marginTop = "5px";
-      in_p2.style.marginRight = "55px";
-      in_p2.style.fontSize = "12px";
-
-      in_p3.innerText = "3Y";
-      in_p3.style.marginTop = "5px";
-      in_p3.style.fontSize = "12px";
-      // in_p3.style.marginRight = "35px";
-
-      div2.append(p2, p3, p4);
-      div2_2.append(in_p1, in_p2, in_p3);
-
-      div2_A.append(div2, div2_2);
-
-      div_main.append(div1, div2_A);
-
-      let end = document.createElement("hr");
-      // end.style.backgroundColor = "red";
-      end.style.border = "1px solid #DCDCDC";
-
-      div.append(img, div_main);
-      box.append(div, end);
-    });
+        let element = document.querySelector(".All-funds");
+        element.innerHTML = " ";
+        showdata();
+      }
+    };
   }
-
-  showdata();
-
-  // function myFunction() {
-  //   let val = document.getElementById("item_select").value;
-  //   if (val == "rates") {
-  //     // console.log('val:', val)
-  //     array.sort(function (a, b) {
-  //       return b.rating - a.rating;
-  //     });
-  //     let element = document.querySelector(".All-funds");
-  //     element.innerHTML = " ";
-  //     showdata();
-  //   }
-
-  //   if (val == "returns") {
-  //     array.sort(function (a, b) {
-  //       return b.return_percentage - a.return_percentage;
-  //     });
-
-  //     let element = document.querySelector(".All-funds");
-  //     element.innerHTML = " ";
-  //     showdata();
-  //   }
-  // }
-  // myFunction()
-
-  document.getElementById("item_select").onchange = () => {
-    // console.log("work")
-    let val = document.getElementById("item_select").value;
-    if (val == "rates") {
-      // console.log('val:', val)
-      array.sort(function (a, b) {
-        return b.rating - a.rating;
-      });
-      let element = document.querySelector(".All-funds");
-      element.innerHTML = " ";
-      showdata();
-    }
-
-    if (val == "returns") {
-      array.sort(function (a, b) {
-        return b.return_percentage - a.return_percentage;
-      });
-
-      let element = document.querySelector(".All-funds");
-      element.innerHTML = " ";
-      showdata();
-    }
-  };
+  getData();
 </script>
