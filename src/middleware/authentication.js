@@ -1,5 +1,8 @@
 
 const passport=require('passport')
+const redis=require('redis')
+// const client=redis.createClient()
+
 const GoogleStrategy = require('passport-google-oauth2').Strategy
 
 
@@ -20,10 +23,13 @@ passport.use(new GoogleStrategy({
     callbackURL: "http://localhost:6789/auth/google/callback",
     userProfileURL: 'https://www.googleapis.com/oauth2/v3/userinfo'
   },
-   function(accessToken, refreshToken, profile, cb) {
+   async function(accessToken, refreshToken, profile, cb) {
         
-    return cb(null,profile)
+    //  client.setex('userProfile',60*5,JSON.stringify(profile))
+
+
+   return cb(null,profile)
   }
 ));
 
-module.exports=passport;
+module.exports={passport};
