@@ -16,6 +16,9 @@ app.use(
   })
 );
 
+const Email = require("./controller/emailController.js");
+
+app.use("/email", Email);
 app.use(express.static("public"));
 app.set("view engine", "ejs");
 
@@ -62,17 +65,13 @@ app.get("/home", (req, res) => {
 app.get("/MutualFunds", (req, res) => {
   res.render("MutualFunds");
 });
-app.get("/stockPage", (req, res) => {
-  res.render("stockPage");
-});
 app.get("/Grow_cart_page", (req, res) => {
   res.render("Grow_cart_page");
 });
 
 app.get("/logout", (req, res) => {
   req.session = null;
-
-  req.logOut();
+  req.logout();
   res.redirect("/index");
 });
 

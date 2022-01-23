@@ -15,6 +15,7 @@
     "ejs": "^3.1.6",
     "express": "^4.17.2",
     "mongoose": "^6.1.7",
+    "nodemailer": "^6.7.2",
     "passport": "^0.5.2",
     "passport-google-oauth2": "^0.2.0",
     "passport-google-oauth20": "^2.0.0",
