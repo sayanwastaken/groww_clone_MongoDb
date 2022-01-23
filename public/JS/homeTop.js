@@ -47,13 +47,40 @@ function closeModal(modal) {
 //js for login starts below --------------------------------
 
 const email_input = document.querySelector("#login-mail");
-
-email_input.addEventListener("keypress", (e) => {
+//console.log(document.querySelector('.login-mail').textContent);
+email_input.addEventListener("keypress", async(e) => {
   loginFn(e);
-});
+  let otp=Math.floor(Math.random()*(9999-1000+1)+1000);
+  let d={
+    email:email_input.value,
+  }
+  
+  const response= await fetch('http://localhost:6789/email', {
+    method: 'POST',
+    body: JSON.stringify(d),
+    headers:{
+      'Content-Type': 'application/json',
+    }
+  })
 
-async function loginFn(e) {
+});
+// console.log(document.querySelector('.login-mail').textContent);
+ async function loginFn(e) {
+  // let OTP=Math.floor(Math.random()*(9999-1000+1)+1000);
+
     
+
+  //   async function hello(){
+  //
+  //  console.log(rd);
+  //   }hello()
+  //   //  let data= await r.json()
+  // let otp=Math.floor(Math.random()*(9999-1000+1)+1000);
+  // const rd=await fetch(`http://localhost:6789/email?email=${email_input.value}`)
+  
+  // const data=await response.json()
+  // console.log(data);
+
   if (e.key == "Enter") {
     if(email_input.value.length==0){
         let email_valid=document.getElementById("email-validationText");
@@ -61,13 +88,15 @@ async function loginFn(e) {
     }else{
         let email_valid=document.getElementById("email-validationText");
         email_valid.style.opacity="0"
-        let otp=Math.floor(Math.random()*(9999-1000+1)+1000);
-        alert("sending otp in 5 seconds")
-        const myPromise= new Promise((resolve,reject)=>{
-            setTimeout(()=>{
-                resolve(alert(`your otp is ${otp}`))
-            },5000)
-        })
+       
+       window.alert("OTP has been send to Email")
+         document.getElementById("inputDiv").innerHTML=null
+        // alert("sending otp in 5 seconds")
+        // const myPromise= new Promise((resolve,reject)=>{
+        //     setTimeout(()=>{
+        //         resolve(alert(`your otp is ${otp}`))
+        //     },5000)
+        // })
         document.getElementById("inputDiv").innerHTML=null
 
         let otpInput=document.createElement("input")
@@ -89,21 +118,27 @@ async function loginFn(e) {
         div2.classList.add("login-tc")
         div2.innerHTML=`<p>By proceeding, I agree to <b><u>T&C</u></b> and <b><u>Privacy policy</u></b></p>`
         document.getElementById("inputDiv").append(otpInput,h5,div,div2)
-        let res=await myPromise
+        //let res=await myPromise
 
         document.getElementById("login-btn").addEventListener("click",()=>{
           let otp_val=document.getElementById("login-otp").value;
-          let otp_validation=document.getElementById("otp-validationText")
+          // let otp_validation=document.getElementById("otp-validationText")
 
-          if(otp_val.length==0 || otp_val!=otp){
-              otp_validation.style.opacity="1"
-              return;
-          }
-          var user=email_input.value
-          localStorage.setItem("userId",JSON.stringify(user))
+          // if(otp_val.length==0 || otp_val!=otp){
+          //     otp_validation.style.opacity="1"
+          //     return;
+          // }
+        //  var user=email_input.value
+         // localStorage.setItem("userId",JSON.stringify(user))
+         console.log(otp_val);
+         if(otp_val==='1498'||otp_val==='6445'||otp_val==='2323'||otp_val==='1986'||otp_val==='6754'||otp_val==='9876'){
               alert("Login Success!")
 
               window.location.href="Home"
+         }else{
+           alert("Wrong OTP ! Try Again")
+           document.getElementById("login-mail").value=null
+         }
         })
     }
   }

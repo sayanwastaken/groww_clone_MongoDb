@@ -1,14 +1,20 @@
 const express=require('express')
 const path=require('path')
 const app=express()
+app.use(express.json())
 
-const passport=require('./middleware/authentication.js')
+const {passport,client}=require('./middleware/authentication.js')
 const cookieSession=require('cookie-session')
 
 app.use(cookieSession({
     name: 'tuto-session',
     keys: ['key1']
   }));
+
+
+  const Email=require('./controller/emailController.js')
+
+  app.use('/email',Email)
 
 app.use(express.static("public"))
 app.set('view engine','ejs')
@@ -42,6 +48,7 @@ app.get("/auth/google/failure", (req, res) => {
 
 
 app.get('/index',(req,res)=>{
+
     res.render("index")
 
 })
@@ -50,9 +57,16 @@ app.get('/stockPage',(req,res)=>{
     res.render("stockPage")
 
 })
-app.get('/home',(req,res)=>{
-    res.render("home")
 
+
+// client.get("userProfile", function(err, reply) {
+//   console.log("hi");
+//     console.log(reply); // Will print `OK`
+//   });
+
+app.get('/home',(req,res)=>{
+
+  res.render('home',)
 })
 app.get('/MutualFunds',(req,res)=>{
     res.render("MutualFunds")
@@ -69,10 +83,8 @@ app.get('/Grow_cart_page',(req,res)=>{
 
 app.get('/logout', (req, res) => {
   req.session = null;
- 
-  
-  req.logOut();
-  res.redirect('/index');
+  req.logout();
+  res.redirect('index');
 })
 
 module.exports=app
