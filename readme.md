@@ -71,7 +71,7 @@ Groww is an investing platform where users can find the best mutual funds to inv
      Sayan Das
   </li>
    <li>
-     Abhishek Singh
+     Abhishek Chauhan
   </li>
    <li>
      Majur Jadhav
