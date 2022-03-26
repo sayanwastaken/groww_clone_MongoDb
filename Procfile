@@ -1,2 +1,2 @@
-web: npm run servery
+web: npm run server
 
