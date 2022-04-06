@@ -1,4 +1,6 @@
+
 const express = require("express");
+require('dotenv').config()
 const path = require("path");
 const app = express();
 const passport = require("./middleware/authentication.js");

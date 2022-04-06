@@ -1,8 +1,9 @@
 
 const app=require('./index.js')
 const connect=require('./config/db.js')
-app.listen(6789,async()=>{
+const port = process.env.PORT || 3000;
+app.listen(port,async()=>{
      await connect();
-    console.log("Listening at 6789");
+    console.log("Listening at ");
 })
 
